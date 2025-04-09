@@ -5,7 +5,7 @@ import {
     YoutubeIcon,
     FacebookIcon,
     TiktokIcon,
-} from "@/assets/index";
+} from "@images/assets/index";
 import Link from "next/link";
 
 function Footer() {

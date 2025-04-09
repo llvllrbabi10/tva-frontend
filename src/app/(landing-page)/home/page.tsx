@@ -21,7 +21,7 @@ import {
     HomeSection6Img1,
     HomeSection6Img2,
     HomeSection6Img3,
-} from "@/assets/index";
+} from "@images/assets/index";
 
 function Page() {
     const HomeSection1Imgs = [

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Logo } from "@/assets/index";
+import { Logo } from "@images/assets/index";
 import Link from "next/link";
 import { HeaderMenu } from "./HeaderMenu";
 

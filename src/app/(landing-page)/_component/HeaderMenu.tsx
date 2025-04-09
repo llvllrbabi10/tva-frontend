@@ -5,7 +5,7 @@ import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { ArrowUp } from "@/assets/index";
+import { ArrowUp } from "@images/assets/index";
 
 const offlineClassList: { title: string; href: string; description: string }[] =
     [

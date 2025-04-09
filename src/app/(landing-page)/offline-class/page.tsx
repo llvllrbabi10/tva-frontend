@@ -7,7 +7,7 @@ import {
     OfflineClassSection1Img2,
     OfflineClassSection1Img3,
     OfflineClassSection1Img4,
-} from "@/assets/index";
+} from "@images/assets/index";
 
 function Page() {
     const benefits = [
