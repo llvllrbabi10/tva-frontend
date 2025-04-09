@@ -1,0 +1,27 @@
+.animateSlide {
+    animation: slide 20s linear infinite;
+}
+
+.animateSlide:hover {
+    animation-play-state: paused;
+}
+
+.animateSlideVertical {
+    animation: slide-vertical 20s linear infinite;
+}
+
+.customGradient {
+    background: linear-gradient(to bottom, #ffebe7 0%, transparent 100%);
+}
+
+@keyframes slide {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-vertical {
+    100% {
+        transform: translateY(-100%);
+    }
+}
