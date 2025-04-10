@@ -3,8 +3,8 @@ import Header from "./_component/header/Header";
 import Footer from "./_component/Footer";
 
 export const metadata: Metadata = {
-    title: "TAV Education",
-    description: "TAV Education",
+    title: "TVA Education",
+    description: "TVA Education",
 };
 
 export default function Layout({

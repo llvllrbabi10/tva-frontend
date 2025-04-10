@@ -214,7 +214,6 @@ function Page() {
                                     src={img}
                                     alt={`home-section-1-img-${index + 1}`}
                                     className="xl:w-[250px] xl:h-[200px] md:w-[175px] md:h-[140px] object-cover rounded-[20px]"
-                                    placeholder="blur"
                                 />
                             );
                         })}

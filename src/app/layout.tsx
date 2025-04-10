@@ -3,8 +3,8 @@ import "@/styles/globals.css";
 import StoreProvider from "@/redux/StoreProvider";
 
 export const metadata: Metadata = {
-    title: "TAV Education",
-    description: "TAV Education",
+    title: "TVA Education",
+    description: "TVA Education",
 };
 
 export default function RootLayout({
