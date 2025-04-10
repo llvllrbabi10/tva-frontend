@@ -215,7 +215,6 @@ function Page() {
                                     alt={`home-section-1-img-${index + 1}`}
                                     className="xl:w-[250px] xl:h-[200px] md:w-[175px] md:h-[140px] object-cover rounded-[20px]"
                                     placeholder="blur"
-                                    quality={100}
                                 />
                             );
                         })}
@@ -238,7 +237,6 @@ function Page() {
                                 src={HomeSection2Img1}
                                 alt="HomeSection2Img1"
                                 className="w-[100px]"
-                                quality={100}
                             />
                         </div>
                         <div className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#FF5159] h-[50px] rounded-full px-[20px]">
@@ -259,7 +257,6 @@ function Page() {
                                 src={HomeSection2Img2}
                                 alt="HomeSection2Img2"
                                 className="w-[100px]"
-                                quality={100}
                             />
                         </div>
                         <div className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#65c900] h-[50px] rounded-full px-[20px]">
@@ -283,7 +280,6 @@ function Page() {
                                 src={HomeSection2Img3}
                                 alt="HomeSection2Img3"
                                 className="w-[100px]"
-                                quality={100}
                             />
                         </div>
                         <div className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#00c9c9] h-[50px] rounded-full px-[20px]">
@@ -310,7 +306,6 @@ function Page() {
                                 src={HomeSection2Img4}
                                 alt="HomeSection2Img4"
                                 className="w-[125px]"
-                                quality={100}
                             />
                         </div>
                         <div className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#6500c9] h-[50px] rounded-full px-[20px]">

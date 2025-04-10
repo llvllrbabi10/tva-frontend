@@ -1,0 +1,12 @@
+.menuIcon {
+    display: none;
+}
+
+@media (max-width: 1400px) {
+    .headerMenuPC {
+        display: none;
+    }
+    .menuIcon {
+        display: block;
+    }
+}

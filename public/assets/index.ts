@@ -70,3 +70,5 @@ export { default as Teacher } from "./images/teacher.png";
 export { default as TiktokIcon } from "./images/tiktok-icon.png";
 export { default as YoutubeIcon } from "./images/youtube-icon.png";
 export { default as ArrowUp } from "./images/arrow-up.png";
+export { default as MenuIcon } from "./images/menu-icon.png";
+export { default as CloseIcon } from "./images/close-icon.png";

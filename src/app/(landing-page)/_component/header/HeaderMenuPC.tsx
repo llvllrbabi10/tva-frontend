@@ -6,32 +6,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { ArrowUp } from "@images/assets/index";
+import { offlineClassList } from "@/app/(landing-page)/_constant/constant";
 
-const offlineClassList: { title: string; href: string; description: string }[] =
-    [
-        {
-            title: "Mầm non",
-            href: "/offline-class/mam-non",
-            description: "Tiếng anh cho trẻ em mầm non",
-        },
-        {
-            title: "Tiểu học",
-            href: "/offline-class/tieu-hoc",
-            description: "Tiếng anh cho học sinh tiểu học",
-        },
-        {
-            title: "Trung học cơ sở",
-            href: "/offline-class/thcs",
-            description: "Tiếng anh cho học sinh cấp 2",
-        },
-        {
-            title: "Trung học phổ thông",
-            href: "/offline-class/thpt",
-            description: "Tiếng anh cho học sinh cấp 3",
-        },
-    ];
-
-export function HeaderMenu() {
+export function HeaderMenuPC() {
     const pathname = usePathname();
     const isActive = (href: string) => {
         return pathname.includes(href);
@@ -121,13 +98,6 @@ export function HeaderMenu() {
                 }`}
             >
                 Tin tức
-            </Link>
-
-            <Link
-                href="/home"
-                className={`text-[18px] font-[600] cursor-pointer hover:bg-accent rounded-md px-4 py-2 hover:text-[#D14242]`}
-            >
-                Đăng nhập
             </Link>
         </div>
     );
