@@ -73,3 +73,4 @@ export { default as ArrowUp } from "./images/arrow-up.png";
 export { default as MenuIcon } from "./images/menu-icon.png";
 export { default as CloseIcon } from "./images/close-icon.png";
 export { default as NotFoundImg } from "./images/404-page.jpg";
+export { default as PlacementTestImg1 } from "./images/placement-test-img1.png";
