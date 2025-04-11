@@ -1,6 +1,5 @@
 .studyBg {
-    background: url("@images/assets/svgs/study-bg.svg") no-repeat center center
-        fixed;
+    background: url("/assets/svgs/study-bg.svg") no-repeat center center fixed;
     background-size: cover;
 }
 
