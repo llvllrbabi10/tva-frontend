@@ -72,3 +72,4 @@ export { default as YoutubeIcon } from "./images/youtube-icon.png";
 export { default as ArrowUp } from "./images/arrow-up.png";
 export { default as MenuIcon } from "./images/menu-icon.png";
 export { default as CloseIcon } from "./images/close-icon.png";
+export { default as NotFoundImg } from "./images/404-page.jpg";

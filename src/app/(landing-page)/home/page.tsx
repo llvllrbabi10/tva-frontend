@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 import styles from "./home.module.css";
 import {
     Ok,
@@ -238,9 +240,12 @@ function Page() {
                                 className="w-[100px]"
                             />
                         </div>
-                        <div className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#FF5159] h-[50px] rounded-full px-[20px]">
+                        <Link
+                            href={"/offline-class/mam-non"}
+                            className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#FF5159] h-[50px] rounded-full px-[20px] hover:scale-105 transition-all duration-300 ease-in-out"
+                        >
                             MẦM NON
-                        </div>
+                        </Link>
                         <div className="flex justify-center items-center border border-[#FF5159] h-[40px] rounded-full px-[10px] font-[600]">
                             LỚP 4 TUỔI
                         </div>
@@ -258,9 +263,12 @@ function Page() {
                                 className="w-[100px]"
                             />
                         </div>
-                        <div className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#65c900] h-[50px] rounded-full px-[20px]">
+                        <Link
+                            href={"/offline-class/tieu-hoc"}
+                            className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#65c900] h-[50px] rounded-full px-[20px] hover:scale-105 transition-all duration-300 ease-in-out"
+                        >
                             TIỂU HỌC
-                        </div>
+                        </Link>
                         <div className="flex justify-center items-center border border-[#65c900] h-[40px] rounded-full px-[10px] font-[600]">
                             LỚP TIỂU HỌC CƠ BẢN
                         </div>
@@ -281,9 +289,12 @@ function Page() {
                                 className="w-[100px]"
                             />
                         </div>
-                        <div className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#00c9c9] h-[50px] rounded-full px-[20px]">
+                        <Link
+                            href={"/offline-class/thcs"}
+                            className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#00c9c9] h-[50px] rounded-full px-[20px] hover:scale-105 transition-all duration-300 ease-in-out"
+                        >
                             TRUNG HỌC CƠ SỞ
-                        </div>
+                        </Link>
                         <div className="flex justify-center items-center border border-[#00c9c9] h-[40px] rounded-full px-[10px] font-[600]">
                             LỚP THCS CƠ BẢN
                         </div>
@@ -307,9 +318,12 @@ function Page() {
                                 className="w-[125px]"
                             />
                         </div>
-                        <div className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#6500c9] h-[50px] rounded-full px-[20px]">
+                        <Link
+                            href={"/offline-class/thpt"}
+                            className="flex xl:text-[20px] text-[18px] text-white font-bold justify-center items-center bg-[#6500c9] h-[50px] rounded-full px-[20px] hover:scale-105 transition-all duration-300 ease-in-out"
+                        >
                             TRUNG HỌC PHỔ THÔNG
-                        </div>
+                        </Link>
                         <div className="flex justify-center items-center border border-[#6500c9] h-[40px] rounded-full px-[10px] font-[600]">
                             LỚP ÔN THI THPT QG
                         </div>

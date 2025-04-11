@@ -1,0 +1,17 @@
+.equalHeight {
+    flex: 1 1 auto;
+}
+
+.animatedButton {
+    animation: scaleAnimation 1s infinite;
+}
+
+@keyframes scaleAnimation {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
