@@ -109,8 +109,7 @@ function page() {
                                 />
                                 <div className="flex flex-col flex-1 bg-white p-[10px] gap-[10px]">
                                     <p className="text-[18px] font-bold text-center text-[#3e9533]">
-                                        TỔNG ÔN TỪ VỰNG - NGỮ PHÁP <br />
-                                        TIẾNG ANH TRUNG HỌC CƠ SỞ
+                                        LUYỆN THI VÀO 6 CHUYÊN - CLC
                                     </p>
                                     <div className="flex flex-col justify-center items-center flex-1 gap-[5px] min-h-[200px]">
                                         coming soon ...

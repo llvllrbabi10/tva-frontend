@@ -1,7 +1,10 @@
 function loading() {
     return (
-        <div>
-            <h1>Loading...</h1>
+        <div className="flex flex-col items-center justify-center h-screen bg-white">
+            <div className="loader mb-4" />
+            <h1 className="text-xl font-semibold text-gray-700">
+                Đang tải dữ liệu...
+            </h1>
         </div>
     );
 }

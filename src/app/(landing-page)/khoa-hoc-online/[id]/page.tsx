@@ -13,6 +13,8 @@ import {
 } from "@images/assets/index";
 import OnlineCourseSection2 from "../_component/OnlineCourseSection2";
 
+const IDS = ["1"];
+
 type PageProps = {
     params: Promise<{ id: string }>;
 };
@@ -21,7 +23,7 @@ async function page({ params }: PageProps) {
     const _params = await params;
     const { id } = _params;
 
-    if (id != "1") {
+    if (!IDS.includes(id)) {
         notFound();
     }
 
@@ -177,3 +179,7 @@ async function page({ params }: PageProps) {
 }
 
 export default page;
+
+export function generateStaticParams() {
+    return IDS.map((id) => ({ id }));
+}
