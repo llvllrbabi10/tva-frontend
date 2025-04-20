@@ -1,0 +1,1364 @@
+{
+    "id": "entrance-test-1",
+    "title": "Bài kiểm tra trình độ lớp 1",
+    "duration": 60,
+    "examContent": [
+        {
+            "id": "paragraph-2",
+            "type": "Paragraph",
+            "backgroundColor": "#d42424",
+            "color": "#ffffff",
+            "align": "left",
+            "content": [
+                {
+                    "text": "I. Choose the letter A, B, C or D to indicate the word whose underlined part differs from the others in pronunciation in each of the following questions.",
+                    "bold": true
+                }
+            ]
+        },
+        {
+            "id": "1",
+            "type": "Question",
+            "questionType": 1,
+            "label": "1",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "k",
+                            "underline": true
+                        },
+                        {
+                            "text": "now"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "k",
+                            "underline": true
+                        },
+                        {
+                            "text": "nife"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "k",
+                            "underline": true
+                        },
+                        {
+                            "text": "ite"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "k",
+                            "underline": true
+                        },
+                        {
+                            "text": "night "
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [],
+            "correctAnswer": "C",
+            "explain": {
+                "url": "",
+                "content": [
+                    [
+                        {
+                            "text": "A. p",
+                            "bold": true
+                        },
+                        {
+                            "text": "u",
+                            "bold": true,
+                            "underline": true
+                        },
+                        {
+                            "text": "t /pʊt/ (đặt, để)",
+                            "bold": true
+                        },
+                        {
+                            "text": " B. m"
+                        },
+                        {
+                            "text": "u",
+                            "underline": true
+                        },
+                        {
+                            "text": "d /mʌd/ (bùn) "
+                        }
+                    ],
+                    [
+                        {
+                            "text": "          C. c"
+                        },
+                        {
+                            "text": "u",
+                            "underline": true
+                        },
+                        {
+                            "text": "t /kʌt/ (cắt)  D. p"
+                        },
+                        {
+                            "text": "u",
+                            "underline": true
+                        },
+                        {
+                            "text": "mp /pʌmp/ (bơm) "
+                        }
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "2",
+            "type": "Question",
+            "questionType": 1,
+            "label": "2",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "st"
+                        },
+                        {
+                            "text": "a",
+                            "underline": true
+                        },
+                        {
+                            "text": "tion"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "h"
+                        },
+                        {
+                            "text": "a",
+                            "underline": true
+                        },
+                        {
+                            "text": "ppen"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "r"
+                        },
+                        {
+                            "text": "a",
+                            "underline": true
+                        },
+                        {
+                            "text": "bbit"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "m"
+                        },
+                        {
+                            "text": "a",
+                            "underline": true
+                        },
+                        {
+                            "text": "tter"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [],
+            "correctAnswer": "A",
+            "explain": {
+                "url": "",
+                "content": [
+                    [
+                        {
+                            "text": "A."
+                        },
+                        {
+                            "text": "th",
+                            "underline": true
+                        },
+                        {
+                            "text": "at /ðæt/ (đó, kia) B. "
+                        },
+                        {
+                            "text": "th",
+                            "underline": true
+                        },
+                        {
+                            "text": "an /ðæn/ (hơn) "
+                        }
+                    ],
+                    [
+                        {
+                            "text": "C. wi"
+                        },
+                        {
+                            "text": "th",
+                            "underline": true
+                        },
+                        {
+                            "text": " /wɪð/ (với)  "
+                        },
+                        {
+                            "text": "D. ",
+                            "bold": true
+                        },
+                        {
+                            "text": "th",
+                            "bold": true,
+                            "underline": true
+                        },
+                        {
+                            "text": "in /θɪn/ (mỏng, gầy)",
+                            "bold": true
+                        },
+                        {
+                            "text": " "
+                        }
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "paragraph-6",
+            "type": "Paragraph",
+            "backgroundColor": "#d42424",
+            "color": "#ffffff",
+            "align": "left",
+            "content": [
+                {
+                    "text": "II. Choose the letter A, B, C or D and to indicate the word whose main stress is different from the others in each of the following questions.",
+                    "bold": true
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "type": "Question",
+            "questionType": 1,
+            "label": "3",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "story"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "building"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "design"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "pilot"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [],
+            "correctAnswer": "C",
+            "explain": {
+                "url": "",
+                "content": [
+                    [
+                        {
+                            "text": "A. qu"
+                        },
+                        {
+                            "text": "ee",
+                            "underline": true
+                        },
+                        {
+                            "text": "n /kwiːn/ (nữ hoàng)  "
+                        },
+                        {
+                            "text": "B. d",
+                            "bold": true
+                        },
+                        {
+                            "text": "ee",
+                            "bold": true,
+                            "underline": true
+                        },
+                        {
+                            "text": "r /dɪr/ (con hươu, nai)",
+                            "bold": true
+                        },
+                        {
+                            "text": " "
+                        }
+                    ],
+                    [
+                        {
+                            "text": "C. s"
+                        },
+                        {
+                            "text": "ee",
+                            "underline": true
+                        },
+                        {
+                            "text": "d /siːd/ (hạt giống)  D. sl"
+                        },
+                        {
+                            "text": "ee",
+                            "underline": true
+                        },
+                        {
+                            "text": "p /sliːp/ (ngủ) "
+                        }
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "4",
+            "type": "Question",
+            "questionType": 1,
+            "label": "4",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "address"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "homework"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "hungry"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "season"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [],
+            "correctAnswer": "A"
+        },
+        {
+            "id": "paragraph-10",
+            "type": "Paragraph",
+            "backgroundColor": "#d42424",
+            "color": "#ffffff",
+            "align": "left",
+            "content": [
+                {
+                    "text": "III. Choose the letter A, B, C or D and to indicate the correct answer to each of the following questions.",
+                    "bold": true
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "type": "Question",
+            "questionType": 1,
+            "label": "5",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "go"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "goes"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "going"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "is going"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "He ______ to school 6 days a week."
+                    }
+                ]
+            ],
+            "correctAnswer": "B"
+        },
+        {
+            "id": "6",
+            "type": "Question",
+            "questionType": 1,
+            "label": "6",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "and"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "or"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "because"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "so"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "Nga wants to be a writer ______ she would like to write story for children."
+                    }
+                ]
+            ],
+            "correctAnswer": "C"
+        },
+        {
+            "id": "7",
+            "type": "Question",
+            "questionType": 1,
+            "label": "7",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "Where"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "What"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "Why"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "How"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "______ can I get to the supermarket?"
+                    }
+                ]
+            ],
+            "correctAnswer": "D"
+        },
+        {
+            "id": "8",
+            "type": "Question",
+            "questionType": 1,
+            "label": "8",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "give"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "gives"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "giving"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "gave"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "Bob will ______us answer tomorrow morning."
+                    }
+                ]
+            ],
+            "correctAnswer": "A"
+        },
+        {
+            "id": "9",
+            "type": "Question",
+            "questionType": 1,
+            "label": "9",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "has"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "have"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "had"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "is having"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "I ______ bacon and eggs for breakfast yesterday. "
+                    }
+                ]
+            ],
+            "correctAnswer": "B"
+        },
+        {
+            "id": "10",
+            "type": "Question",
+            "questionType": 1,
+            "label": "10",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "any"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "much"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "many"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "some"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "How ______ water do you drink every day?"
+                    }
+                ]
+            ],
+            "correctAnswer": "C"
+        },
+        {
+            "id": "11",
+            "type": "Question",
+            "questionType": 1,
+            "label": "11",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "never"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "sometimes"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "usually"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "often"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "It is ______ too late to say “Sorry” for what you did wrong."
+                    }
+                ]
+            ],
+            "correctAnswer": "A",
+            "explain": {
+                "url": "",
+                "content": [
+                    [
+                        {
+                            "text": "A. volunteers",
+                            "bold": true
+                        },
+                        {
+                            "text": "Giải thích: \"Volunteers\" (tình nguyện viên) là người tham gia giúp đỡ mà không nhận lương.Dịch: Cảnh sát đang tìm kiếm 50 tình nguyện viên để giúp tìm kiếm cô bé mất tích."
+                        }
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "12",
+            "type": "Question",
+            "questionType": 1,
+            "label": "12",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "on"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "in"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "at"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "next"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "The bus No.22 stops right ______ the zoo entrance."
+                    }
+                ]
+            ],
+            "correctAnswer": "C",
+            "explain": {
+                "url": "",
+                "content": [
+                    [
+                        {
+                            "text": "D. souvenirs",
+                            "bold": true
+                        },
+                        {
+                            "text": "Giải thích: \"Souvenirs\" (quà lưu niệm) là đồ mang về sau chuyến du lịch.Dịch: Quà lưu niệm là những thứ bạn mang về cho người khác sau khi đi du lịch."
+                        }
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "13",
+            "type": "Question",
+            "questionType": 1,
+            "label": "13",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "carry heavy things"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "get up late"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "eat a lot of sweats"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "take a rest"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "Nam has a fever. He should ______."
+                    }
+                ]
+            ],
+            "correctAnswer": "D",
+            "explain": {
+                "url": "",
+                "content": [
+                    [
+                        {
+                            "text": " C. pale",
+                            "bold": true
+                        },
+                        {
+                            "text": "Giải thích: \"Pale\" (tái nhợt) mô tả da mặt khi bị ốm hoặc thiếu sức sống.Dịch: Mặt anh ấy trở nên tái nhợt vì bệnh."
+                        }
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "14",
+            "type": "Question",
+            "questionType": 1,
+            "label": "14",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "stations"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "museums"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "markets"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "parks"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "You can visit ______to see old things of paintings. "
+                    }
+                ]
+            ],
+            "correctAnswer": "B",
+            "explain": {
+                "url": "",
+                "content": [
+                    [
+                        {
+                            "text": "B. carpenter",
+                            "bold": true
+                        },
+                        {
+                            "text": "Giải thích: \"Carpenter\" (thợ mộc) là người làm và sửa chữa đồ gỗ.Dịch: Thợ mộc là người làm và sửa chữa các đồ vật, công trình bằng gỗ."
+                        }
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "15",
+            "type": "Question",
+            "questionType": 1,
+            "label": "15",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "busy"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "busyer"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "busier"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "more busier"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "Life in the city is ______ than life in the mountains."
+                    }
+                ]
+            ],
+            "correctAnswer": "C",
+            "explain": {
+                "url": "",
+                "content": [
+                    [
+                        {
+                            "text": "C. package",
+                            "bold": true
+                        },
+                        {
+                            "text": "Giải thích: \"Package\" (đóng gói) giúp bảo quản và trình bày sản phẩm tốt hơn.Dịch: Các công ty chế biến và đóng gói sản phẩm trước khi đưa vào siêu thị để đảm bảo chúng được trình bày đẹp và có chất lượng tốt."
+                        }
+                    ]
+                ]
+            }
+        },
+        {
+            "id": "16",
+            "type": "Question",
+            "questionType": 1,
+            "label": "16",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "interested"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "interesting"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "interest"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "interestingly"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "My brother has no ______ in basketball."
+                    }
+                ]
+            ],
+            "correctAnswer": "C"
+        },
+        {
+            "id": "17",
+            "type": "Question",
+            "questionType": 1,
+            "label": "17",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "bars"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "bowls"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "glasses"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "cartons"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "I often eat three ______ of rice a meal."
+                    }
+                ]
+            ],
+            "correctAnswer": "B"
+        },
+        {
+            "id": "18",
+            "type": "Question",
+            "questionType": 1,
+            "label": "18",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "cut yourself"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "have a cold"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "get a pain"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "break your legs"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "Don’t climb the tree because you may fall and______."
+                    }
+                ]
+            ],
+            "correctAnswer": "D"
+        },
+        {
+            "id": "19",
+            "type": "Question",
+            "questionType": 1,
+            "label": "19",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "Sure, go ahead"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "Yes, please"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "Sorry, I’m new here myself"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "OK, here is the ticket"
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "Excuse me. Can you tell me where the bookstore is? - ______."
+                    }
+                ]
+            ],
+            "correctAnswer": "C"
+        },
+        {
+            "id": "20",
+            "type": "Question",
+            "questionType": 1,
+            "label": "20",
+            "options": [
+                {
+                    "label": "A",
+                    "content": [
+                        {
+                            "text": "I’m sorry. I can’t"
+                        }
+                    ]
+                },
+                {
+                    "label": "B",
+                    "content": [
+                        {
+                            "text": "Here you are"
+                        }
+                    ]
+                },
+                {
+                    "label": "C",
+                    "content": [
+                        {
+                            "text": "I’m looking for a watch"
+                        }
+                    ]
+                },
+                {
+                    "label": "D",
+                    "content": [
+                        {
+                            "text": "You’re welcome."
+                        }
+                    ]
+                }
+            ],
+            "questionContent": [
+                [
+                    {
+                        "text": "Hello, how can I help you? - ______."
+                    }
+                ]
+            ],
+            "correctAnswer": "C"
+        },
+        {
+            "id": "paragraph-47",
+            "type": "Paragraph",
+            "backgroundColor": "#d42424",
+            "color": "#ffffff",
+            "align": "left",
+            "content": [
+                {
+                    "text": "IV. Rearrange the words to make meaningful sentences.",
+                    "bold": true
+                }
+            ]
+        },
+        {
+            "id": "27",
+            "type": "Question",
+            "questionType": 2,
+            "label": "27",
+            "questionContent": [
+                [
+                    {
+                        "text": "and / North Court castle / , / visited / an / last week / my mother / saw / old painting / ."
+                    }
+                ],
+                [
+                    {
+                        "text": "_______________________________________________________________________",
+                        "isUserEnterPlace": true
+                    }
+                ]
+            ],
+            "correctAnswer": "Last week, my mother visited North Court castle and saw an old painting."
+        },
+        {
+            "id": "28",
+            "type": "Question",
+            "questionType": 2,
+            "label": "28",
+            "questionContent": [
+                [
+                    {
+                        "text": "There / a / my / trees / school / lot / to / are / of / on / the way / ."
+                    }
+                ],
+                [
+                    {
+                        "text": "_______________________________________________________________________",
+                        "isUserEnterPlace": true
+                    }
+                ]
+            ],
+            "correctAnswer": "There are a lot of trees on the way to my school."
+        },
+        {
+            "id": "paragraph-52",
+            "type": "Paragraph",
+            "backgroundColor": "#d42424",
+            "color": "#ffffff",
+            "align": "left",
+            "content": [
+                {
+                    "text": "V. Finish the second sentence so that it has a similar meaning to the first one, use the given words.",
+                    "bold": true
+                }
+            ]
+        },
+        {
+            "id": "29",
+            "type": "Question",
+            "questionType": 2,
+            "label": "29",
+            "questionContent": [
+                [
+                    {
+                        "text": "My school is in front of the pharmacy."
+                    }
+                ],
+                [
+                    {
+                        "text": "The pharmacy "
+                    },
+                    {
+                        "text": "_______________________________________________________",
+                        "isUserEnterPlace": true
+                    },
+                    {
+                        "text": " "
+                    }
+                ]
+            ],
+            "correctAnswer": "The pharmacy is behind my school."
+        },
+        {
+            "id": "30",
+            "type": "Question",
+            "questionType": 2,
+            "label": "30",
+            "questionContent": [
+                [
+                    {
+                        "text": "I have a plan to visit my grandparents next Monday."
+                    }
+                ],
+                [
+                    {
+                        "text": "I am going "
+                    },
+                    {
+                        "text": "__________________________________________________________",
+                        "isUserEnterPlace": true
+                    }
+                ]
+            ],
+            "correctAnswer": "I am going to visit my grandparents next Monday."
+        }
+    ]
+}

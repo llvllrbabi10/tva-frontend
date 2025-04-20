@@ -35,6 +35,7 @@ export { default as KindergartenEnglishSection1Img5 } from "./images/kindergarte
 export { default as KindergartenEnglishSection1Img6 } from "./images/kindergarten-english-section-1-img-6.jpg";
 export { default as Light } from "./images/light.png";
 export { default as Logo } from "./images/logo.png";
+export { default as LogoShort } from "./images/logo-short.png";
 export { default as LogoWhite } from "./images/logo-white.png";
 export { default as OfflineClassSection1Img1 } from "./images/offline-class-section-1-img-1.png";
 export { default as OfflineClassSection1Img2 } from "./images/offline-class-section-1-img-2.jpg";
@@ -74,3 +75,5 @@ export { default as MenuIcon } from "./images/menu-icon.png";
 export { default as CloseIcon } from "./images/close-icon.png";
 export { default as NotFoundImg } from "./images/404-page.jpg";
 export { default as PlacementTestImg1 } from "./images/placement-test-img1.png";
+export { default as Clock } from "./images/clock.png";
+export { default as XCircel } from "./images/x-circle.png";

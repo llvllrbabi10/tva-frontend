@@ -1,12 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./slices/counterSlice";
+import examReducer from "./slices/examSlice";
 // import { pokemonApi } from "./services/pokemon-service";
 // import { userApi } from "./services/user-service";
 
 export const makeStore = () => {
     return configureStore({
         reducer: {
-            counter: counterReducer,
+            exam: examReducer,
             // [pokemonApi.reducerPath]: pokemonApi.reducer,
             // [userApi.reducerPath]: userApi.reducer,
         },

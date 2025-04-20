@@ -3,9 +3,11 @@ import Image from "next/image";
 import PlacementTest from "./placement-test.module.css";
 
 import { PlacementTestImg1 } from "@images/assets";
+import Link from "next/link";
 
 const classes = [
     {
+        id: 1,
         emoji: "🧸",
         name: "Lớp 1",
         description: "Pre-A1 Starters",
@@ -14,6 +16,7 @@ const classes = [
         buttonColor: "bg-pink-400",
     },
     {
+        id: 2,
         emoji: "🐥",
         name: "Lớp 2",
         description: "Pre-A1 Starters",
@@ -22,6 +25,7 @@ const classes = [
         buttonColor: "bg-green-400",
     },
     {
+        id: 3,
         emoji: "🎈",
         name: "Lớp 3",
         description: "A1 Movers",
@@ -30,6 +34,7 @@ const classes = [
         buttonColor: "bg-blue-400",
     },
     {
+        id: 4,
         emoji: "🛸",
         name: "Lớp 4",
         description: "A1 Movers",
@@ -38,6 +43,7 @@ const classes = [
         buttonColor: "bg-purple-400",
     },
     {
+        id: 5,
         emoji: "📘",
         name: "Lớp 5",
         description: "A2 Flyers",
@@ -46,6 +52,7 @@ const classes = [
         buttonColor: "bg-red-400",
     },
     {
+        id: 6,
         emoji: "🎯",
         name: "Lớp 6",
         description: "A2 Key (KET)",
@@ -54,6 +61,7 @@ const classes = [
         buttonColor: "bg-teal-400",
     },
     {
+        id: 7,
         emoji: "🚀",
         name: "Lớp 7",
         description: "B1 Preliminary (PET) – giai đoạn đầu",
@@ -62,6 +70,7 @@ const classes = [
         buttonColor: "bg-orange-400",
     },
     {
+        id: 8,
         emoji: "🦄",
         name: "Lớp 8",
         description: "B1+ PET / B2 First – giai đoạn đầu",
@@ -70,6 +79,7 @@ const classes = [
         buttonColor: "bg-indigo-400",
     },
     {
+        id: 9,
         emoji: "🎓",
         name: "Lớp 9",
         description: "B2 First (FCE)",
@@ -78,6 +88,7 @@ const classes = [
         buttonColor: "bg-cyan-400",
     },
     {
+        id: 10,
         emoji: "📚",
         name: "Lớp 10",
         description: "B2+ / C1 Advanced (giai đoạn đầu)",
@@ -86,6 +97,7 @@ const classes = [
         buttonColor: "bg-pink-400",
     },
     {
+        id: 11,
         emoji: "👑",
         name: "Lớp 11",
         description: "C1 Advanced (CAE)",
@@ -94,6 +106,7 @@ const classes = [
         buttonColor: "bg-yellow-400",
     },
     {
+        id: 12,
         emoji: "🏆",
         name: "Lớp 12",
         description: "C1 Advanced",
@@ -124,15 +137,7 @@ function page() {
 
             <div className="max-w-4xl mx-auto px-4 md:py-8 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
                 {classes.map((classItem, index) => (
-                    <ClassCard
-                        key={index}
-                        emoji={classItem.emoji}
-                        name={classItem.name}
-                        description={classItem.description}
-                        borderColor={classItem.borderColor}
-                        textColor={classItem.textColor}
-                        buttonColor={classItem.buttonColor}
-                    />
+                    <ClassCard key={index} {...classItem} />
                 ))}
             </div>
         </div>
@@ -142,6 +147,7 @@ function page() {
 export default page;
 
 type ClassCardProps = {
+    id: number;
     emoji: string;
     name: string;
     description: string;
@@ -151,6 +157,7 @@ type ClassCardProps = {
 };
 
 const ClassCard = ({
+    id,
     emoji,
     name,
     description,
@@ -159,7 +166,8 @@ const ClassCard = ({
     buttonColor,
 }: ClassCardProps) => {
     return (
-        <div
+        <Link
+            href={`/kiem-tra-trinh-do/${id}`}
             className={`flex flex-col justify-between bg-white rounded-3xl p-6 shadow-lg hover:scale-105 transition-transform duration-300 border-4 ${borderColor} cursor-pointer`}
         >
             <div>
@@ -174,6 +182,6 @@ const ClassCard = ({
             >
                 Làm bài
             </button>
-        </div>
+        </Link>
     );
 };
