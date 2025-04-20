@@ -17,23 +17,14 @@ async function page({ params }: PageProps) {
         notFound();
     }
 
-    const data = await getExamData(id);
-
     return (
         <div>
-            <ExamComponent examInformation={data} />
+            <ExamComponent id={id} />
         </div>
     );
 }
 
 export default page;
-
-async function getExamData(id: string) {
-    const res = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/exams/entrance-test-${id}.json`
-    );
-    return res.json();
-}
 
 export function generateStaticParams() {
     return IDS.map((id) => ({ id }));

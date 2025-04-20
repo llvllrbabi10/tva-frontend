@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import { ExamInfo } from "../_model/model";
 import ExamRenderer from "./ExamRenderer";
@@ -14,7 +14,7 @@ import {
 } from "@/redux/slices/examSlice";
 import { RootState } from "@/redux/store";
 
-function ExamComponent({ examInformation }: { examInformation: ExamInfo }) {
+function ExamComponent({ id }: { id: string }) {
     const dispatch = useDispatch();
 
     const { submitted } = useSelector(
@@ -24,29 +24,52 @@ function ExamComponent({ examInformation }: { examInformation: ExamInfo }) {
         shallowEqual
     );
 
+    const [isLoading, setIsLoading] = useState(true);
+
     useEffect(() => {
-        dispatch(setExamInfo(examInformation));
-        dispatch(setTimeLeft((examInformation.duration ?? 0) * 60));
-    }, [examInformation]);
+        const getExamData = async (id: string) => {
+            const res = await fetch(`/exams/entrance-test-${id}.json`);
+            if (!res.ok) {
+                throw new Error(`Failed to fetch exam data: ${res.status}`);
+            }
+            const examInformation: ExamInfo = await res.json();
+            dispatch(setExamInfo(examInformation));
+            dispatch(setTimeLeft((examInformation.duration ?? 0) * 60));
+            setIsLoading(false);
+        };
+
+        getExamData(id);
+    }, []);
 
     const handleSubmit = () => {
         dispatch(setSubmitted(true));
     };
 
     return (
-        <div className="bg-[#f2f4f7]">
-            <ExamHeader />
-            <ExamRenderer />
+        <>
+            {isLoading ? (
+                <div className="flex flex-col items-center justify-center h-screen bg-white">
+                    <div className="loader mb-4" />
+                    <h1 className="text-xl font-semibold text-gray-700">
+                        Đang tải dữ liệu...
+                    </h1>
+                </div>
+            ) : (
+                <div className="bg-[#f2f4f7]">
+                    <ExamHeader />
+                    <ExamRenderer />
 
-            {!submitted && (
-                <button
-                    onClick={handleSubmit}
-                    className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
-                >
-                    Chấm điểm
-                </button>
+                    {!submitted && (
+                        <button
+                            onClick={handleSubmit}
+                            className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+                        >
+                            Chấm điểm
+                        </button>
+                    )}
+                </div>
             )}
-        </div>
+        </>
     );
 }
 
