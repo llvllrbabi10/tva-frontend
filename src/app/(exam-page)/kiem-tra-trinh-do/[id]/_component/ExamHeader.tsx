@@ -5,22 +5,18 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
-import {
-    setTimeLeft,
-    setSubmitted,
-    setIsRunning,
-} from "@/redux/slices/examSlice";
+import { setTimeLeft, setSubmitted } from "@/redux/slices/examSlice";
 import { RootState } from "@/redux/store";
 
 import { Logo, LogoShort, Clock, XCircel } from "@images/assets";
 
 function ExamHeader() {
     const dispatch = useDispatch();
-    const { examInfo, timeLeft, isRunning } = useSelector(
+    const { examInfo, timeLeft, submitted } = useSelector(
         (state: RootState) => ({
             examInfo: state.exam.examInfo,
             timeLeft: state.exam.timeLeft,
-            isRunning: state.exam.isRunning,
+            submitted: state.exam.submitted,
         }),
         shallowEqual
     );
@@ -28,21 +24,21 @@ function ExamHeader() {
     const timerRef = useRef<NodeJS.Timeout | null>(null);
     const examTitle = examInfo.title || "Bài kiểm tra";
 
-    // count down
+    // countdown
     useEffect(() => {
-        if (isRunning && timeLeft > 0) {
+        // Nếu chưa nộp và còn thời gian thì countdown
+        if (!submitted && timeLeft > 0) {
             timerRef.current = setTimeout(() => {
                 const newTimeLeft = timeLeft - 1;
                 dispatch(setTimeLeft(newTimeLeft));
             }, 1000);
-        } else if (timeLeft === 0 && isRunning) {
+        } else if (timeLeft === 0 && !submitted) {
             dispatch(setSubmitted(true));
-            dispatch(setIsRunning(false));
         }
         return () => {
             if (timerRef.current) clearTimeout(timerRef.current);
         };
-    }, [timeLeft, isRunning]);
+    }, [timeLeft, submitted]);
 
     // format seconds to mm:ss
     const formatTime = (seconds: number) => {

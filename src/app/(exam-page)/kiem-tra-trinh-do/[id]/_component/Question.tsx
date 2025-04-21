@@ -1,7 +1,11 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import {
     EssayQuestion,
     MultipleChoiceQuestion,
     Question,
+    Option,
     RichTextBlock,
 } from "../_model/model";
 import RichText from "./RichText";
@@ -19,139 +23,148 @@ export default function QuestionRenderer({
     onAnswerChange,
     submitted,
 }: Props) {
-    const renderContent = (blocks: RichTextBlock[][]) =>
-        blocks.map((line, index) => (
-            <div key={index}>
-                <RichText content={line} />
-            </div>
-        ));
-
     if (data.questionType === 1) {
         const q = data as MultipleChoiceQuestion;
 
-        if (q.questionContent?.length) {
-            return (
-                <div className="mt-[10px] px-[16px] py-[10px] rounded-[10px] bg-white shadow-sm">
-                    <div className="font-semibold">{q.label}</div>
-                    {q.questionContent && renderContent(q.questionContent)}
-                    <div>
-                        {q.options.map((opt) => {
-                            const isSelected = userAnswer === opt.label;
-                            const isCorrect =
-                                submitted && q.correctAnswer === opt.label;
-                            const isWrong =
-                                submitted && isSelected && !isCorrect;
+        const getBgQuestion = () => {
+            if (!submitted) {
+                return "bg-white";
+            }
+            if (q.correctAnswer === userAnswer) {
+                return "bg-[#d3f2cc]";
+            }
+            if (q.correctAnswer !== userAnswer) {
+                return "bg-[#f5dfdf]";
+            }
+            return "bg-white";
+        };
 
-                            return (
-                                <div
-                                    key={opt.label}
-                                    className={`flex items-start gap-2 p-2 rounded cursor-pointer border
-                              ${
-                                  isCorrect
-                                      ? "bg-green-100 border-green-600"
-                                      : ""
-                              }
-                              ${isWrong ? "bg-red-100 border-red-600" : ""}
-                              ${
-                                  isSelected && !submitted
-                                      ? "bg-blue-100 border-blue-600"
-                                      : ""
-                              }
-                            `}
-                                    onClick={() =>
-                                        !submitted &&
-                                        onAnswerChange(q.id, opt.label)
-                                    }
-                                >
-                                    <span className="font-bold">
-                                        {opt.label}.
-                                    </span>
-                                    <RichText content={opt.content} />
-                                </div>
-                            );
-                        })}
-                    </div>
-                    {submitted && q.explain && (
-                        <div className="mt-2 text-sm text-gray-600">
-                            <strong>Giải thích:</strong>
-                            {renderContent(q.explain.content)}
+        const getStyleLabelOption = (opt: Option) => {
+            const isSelected = userAnswer === opt.label;
+            const isCorrect = submitted && q.correctAnswer === opt.label;
+            const isWrong = submitted && isSelected && !isCorrect;
+
+            if (!isSelected && !submitted) {
+                return "bg-[#ededed]";
+            }
+            if (isSelected && !submitted) {
+                return "bg-[#2850d4] text-white";
+            }
+            if (isCorrect) {
+                return "bg-[#62b002] text-white";
+            }
+            if (isWrong) {
+                return "bg-[#e34f4f] text-white";
+            }
+            return "";
+        };
+
+        const OptionGrid = ({ q }: { q: MultipleChoiceQuestion }) => {
+            const optionRefs = useRef<(HTMLDivElement | null)[]>([]);
+            const [colClass, setColClass] = useState("grid-cols-1");
+
+            useEffect(() => {
+                if (!optionRefs.current.length) return;
+
+                const maxWidth = optionRefs.current.reduce((max, el) => {
+                    if (el) {
+                        let width = 0;
+                        if (el.children) {
+                            for (let i = 0; i < el.children.length; i++) {
+                                const child = el.children[i] as HTMLElement;
+                                width += child.getBoundingClientRect().width;
+                            }
+                        } else {
+                            width = el.getBoundingClientRect().width;
+                        }
+
+                        return Math.max(max, width);
+                    }
+                    return max;
+                }, 0);
+
+                let maxAreaWidth = 0;
+                const screenWidth = window.innerWidth;
+                if (screenWidth > 768) {
+                    maxAreaWidth = 750;
+                } else {
+                    maxAreaWidth = Math.min(
+                        screenWidth - 64, // 16px padding on each side
+                        500
+                    );
+                }
+
+                if (maxWidth > maxAreaWidth / 2.5) {
+                    setColClass("grid-cols-1");
+                } else if (maxWidth > maxAreaWidth / 5) {
+                    setColClass("grid-cols-2");
+                } else {
+                    setColClass("grid-cols-4");
+                }
+            }, [q]);
+
+            return (
+                <div className={`grid ${colClass} flex-1 gap-[10px]`}>
+                    {q.options.map((opt, index) => (
+                        <div
+                            key={opt.label}
+                            ref={(el) => {
+                                optionRefs.current[index] = el;
+                            }}
+                            className="flex gap-[5px] rounded-full cursor-pointer"
+                            onClick={() =>
+                                !submitted && onAnswerChange(q.id, opt.label)
+                            }
+                        >
+                            <span
+                                className={`
+                                    flex justify-center items-center
+                                    w-[24px] h-[24px] font-[600] px-[6px] rounded-full 
+                                    ${getStyleLabelOption(opt)}`}
+                            >
+                                {opt.label}
+                            </span>
+
+                            <RichText content={opt.content} />
                         </div>
-                    )}
+                    ))}
                 </div>
             );
-        } else {
-            return (
-                <>
-                    <div
-                        className={`flex mt-[10px] px-[16px] py-[10px] gap-[10px] rounded-[10px]  shadow-sm
-                        ${
-                            !submitted
-                                ? "bg-white"
-                                : q.correctAnswer === userAnswer
-                                ? "bg-[#d3f2cc]"
-                                : "bg-[#f5dfdf]"
-                        }`}
-                    >
-                        <div className="md:font-[700] font-[600]">
+        };
+
+        return (
+            <>
+                <div
+                    className={`
+                            flex
+                            ${
+                                q.questionContent?.length
+                                    ? "flex-col gap-[10px]"
+                                    : "flex-row"
+                            }
+                            mt-[10px] 
+                            px-[16px] 
+                            py-[10px] 
+                            rounded-[10px] 
+                            shadow-sm
+                            ${getBgQuestion()}`}
+                >
+                    <div className="flex">
+                        <div className="md:font-[700] font-[600] mr-[10px]">
                             {q.label}.
                         </div>
-                        <div className="grid md:grid-cols-4 grid-cols-2 flex-1 gap-[10px]">
-                            {q.options.map((opt) => {
-                                const isSelected = userAnswer === opt.label;
-                                const isCorrect =
-                                    submitted && q.correctAnswer === opt.label;
-                                const isWrong =
-                                    submitted && isSelected && !isCorrect;
-
-                                return (
-                                    <div
-                                        key={opt.label}
-                                        className={`flex gap-[5px] rounded-full cursor-pointer`}
-                                        onClick={() =>
-                                            !submitted &&
-                                            onAnswerChange(q.id, opt.label)
-                                        }
-                                    >
-                                        <span
-                                            className={`flex justify-center items-center w-[24px] h-[24px] font-[600] px-[6px] rounded-full 
-                                            ${
-                                                !isSelected && !submitted
-                                                    ? "bg-[#ededed]"
-                                                    : ""
-                                            }
-                                               ${
-                                                   isSelected && !submitted
-                                                       ? "bg-[#2850d4] text-white"
-                                                       : ""
-                                               } 
-                                            ${
-                                                isCorrect
-                                                    ? "bg-[#62b002] text-white"
-                                                    : ""
-                                            }
-                                            ${
-                                                isWrong
-                                                    ? "bg-[#e34f4f] text-white"
-                                                    : ""
-                                            }`}
-                                        >
-                                            {opt.label}
-                                        </span>
-                                        <RichText content={opt.content} />
-                                    </div>
-                                );
-                            })}
-                        </div>
+                        {q.questionContent && renderContent(q.questionContent)}
                     </div>
-                    {submitted && q.explain && (
-                        <div className="mt-2 text-sm text-gray-600">
-                            <strong>Giải thích:</strong>
-                            {renderContent(q.explain.content)}
-                        </div>
-                    )}
-                </>
-            );
-        }
+                    {OptionGrid({ q })}
+                </div>
+                {submitted && q.explain && (
+                    <div className="mt-[5px] px-[16px] py-[10px] text-sm  bg-[#f7ffbe] rounded-[10px]">
+                        <strong>Giải thích:</strong>
+                        {renderContent(q.explain.content)}
+                    </div>
+                )}
+            </>
+        );
     }
 
     const q = data as EssayQuestion;
@@ -180,3 +193,11 @@ export default function QuestionRenderer({
         </div>
     );
 }
+
+const renderContent = (blocks: RichTextBlock[][]) => {
+    return blocks.map((line, index) => (
+        <div key={index}>
+            <RichText content={line} />
+        </div>
+    ));
+};

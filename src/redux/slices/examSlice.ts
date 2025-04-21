@@ -7,7 +7,6 @@ export interface ExamState {
     userAnswers: Record<string, string>;
     submitted: boolean;
     timeLeft: number;
-    isRunning: boolean;
 }
 
 const initialState: ExamState = {
@@ -17,8 +16,7 @@ const initialState: ExamState = {
     },
     userAnswers: {},
     submitted: false,
-    timeLeft: 60,
-    isRunning: true,
+    timeLeft: 0,
 };
 
 export const examSlice = createSlice({
@@ -38,14 +36,10 @@ export const examSlice = createSlice({
         setTimeLeft: (state, action) => {
             state.timeLeft = action.payload;
         },
-        setIsRunning: (state, action) => {
-            state.isRunning = action.payload;
-        },
         resetExam: (state) => {
             state.userAnswers = {};
             state.submitted = false;
             state.timeLeft = 0;
-            state.isRunning = true;
         },
     },
 });
@@ -55,7 +49,6 @@ export const {
     setUserAnswers,
     setSubmitted,
     setTimeLeft,
-    setIsRunning,
     resetExam,
 } = examSlice.actions;
 export const examState = (state: RootState) => state.exam; // Lấy state exam từ store

@@ -89,9 +89,11 @@
                         {
                             "text": "t /pʊt/ (đặt, để)",
                             "bold": true
-                        },
+                        }
+                    ],
+                    [
                         {
-                            "text": " B. m"
+                            "text": "B. m"
                         },
                         {
                             "text": "u",
@@ -103,14 +105,19 @@
                     ],
                     [
                         {
-                            "text": "          C. c"
+                            "text": "C. c"
                         },
                         {
                             "text": "u",
                             "underline": true
                         },
                         {
-                            "text": "t /kʌt/ (cắt)  D. p"
+                            "text": "t /kʌt/ (cắt)"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "D. p"
                         },
                         {
                             "text": "u",

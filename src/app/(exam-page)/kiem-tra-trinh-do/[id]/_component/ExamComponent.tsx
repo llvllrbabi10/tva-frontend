@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import { ExamInfo } from "../_model/model";
 import ExamRenderer from "./ExamRenderer";
@@ -17,29 +17,31 @@ import { RootState } from "@/redux/store";
 function ExamComponent({ id }: { id: string }) {
     const dispatch = useDispatch();
 
-    const { submitted } = useSelector(
+    const { examInfo, submitted } = useSelector(
         (state: RootState) => ({
+            examInfo: state.exam.examInfo,
             submitted: state.exam.submitted,
         }),
         shallowEqual
     );
 
-    const [isLoading, setIsLoading] = useState(true);
+    const isLoading = examInfo.id == "0";
 
     useEffect(() => {
-        const getExamData = async (id: string) => {
-            const res = await fetch(`/exams/entrance-test-${id}.json`);
-            if (!res.ok) {
-                throw new Error(`Failed to fetch exam data: ${res.status}`);
-            }
-            const examInformation: ExamInfo = await res.json();
-            dispatch(setExamInfo(examInformation));
-            dispatch(setTimeLeft((examInformation.duration ?? 0) * 60));
-            setIsLoading(false);
-        };
-
-        getExamData(id);
+        if (examInfo.id == "0") {
+            getExamData(id);
+        }
     }, []);
+
+    const getExamData = async (id: string) => {
+        const res = await fetch(`/exams/entrance-test-${id}.json`);
+        if (!res.ok) {
+            throw new Error(`Failed to fetch exam data: ${res.status}`);
+        }
+        const examInformation: ExamInfo = await res.json();
+        dispatch(setExamInfo(examInformation));
+        dispatch(setTimeLeft((examInformation.duration ?? 0) * 60));
+    };
 
     const handleSubmit = () => {
         dispatch(setSubmitted(true));
