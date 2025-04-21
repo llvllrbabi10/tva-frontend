@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { NotFoundImg } from "@images/assets";
-import Header from "@/app/(landing-page)/_component/header/Header";
+import Header from "@/app/(landing-page)/_component/Header";
 import Footer from "@/app/(landing-page)/_component/Footer";
 
 function NotFound() {

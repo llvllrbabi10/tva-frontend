@@ -1,4 +1,4 @@
-import { Paragraph } from "../_model/model";
+import { Paragraph } from "../../../../_model/model";
 import RichText from "./RichText";
 
 export default function ParagraphRenderer({ data }: { data: Paragraph }) {

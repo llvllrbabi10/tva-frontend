@@ -1,15 +1,12 @@
 "use client";
 
 import { RootState } from "@/redux/store";
-import { shallowEqual, useDispatch, useSelector } from "react-redux";
-import { setUserAnswers } from "@/redux/slices/examSlice";
+import { shallowEqual, useSelector } from "react-redux";
 
-import ParagraphRenderer from "./Paragraph";
-import QuestionRenderer from "./Question";
+import ParagraphRenderer from "./sub-exam-renderer/Paragraph";
+import QuestionRenderer from "./sub-exam-renderer/Question";
 
 export default function ExamRenderer() {
-    const dispatch = useDispatch();
-
     const { examInfo, userAnswers, submitted } = useSelector(
         (state: RootState) => ({
             examInfo: state.exam.examInfo,
@@ -19,9 +16,6 @@ export default function ExamRenderer() {
         shallowEqual
     );
 
-    const handleAnswerChange = (questionId: string, answer: string) => {
-        dispatch(setUserAnswers({ questionId, answer }));
-    };
     return (
         <div className="flex flex-col items-center justify-center">
             <div className="flex flex-col md:w-[750px] md:px-[0px] px-[16px] py-[16px]">
@@ -33,7 +27,6 @@ export default function ExamRenderer() {
                             key={el.id}
                             data={el}
                             userAnswer={userAnswers[el.id]}
-                            onAnswerChange={handleAnswerChange}
                             submitted={submitted}
                         />
                     )

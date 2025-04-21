@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 
-import ExamComponent from "./_component/ExamComponent";
+import ExamComponent from "./_component/exam-component/ExamComponent";
 
 type PageProps = {
     params: Promise<{ id: string }>;

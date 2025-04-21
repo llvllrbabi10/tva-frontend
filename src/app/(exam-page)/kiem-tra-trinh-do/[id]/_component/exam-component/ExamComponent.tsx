@@ -2,9 +2,9 @@
 
 import { useEffect } from "react";
 
-import { ExamInfo } from "../_model/model";
-import ExamRenderer from "./ExamRenderer";
-import ExamHeader from "./ExamHeader";
+import { ExamInfo } from "../../_model/model";
+import ExamRenderer from "./sub-exam-component/ExamRenderer";
+import ExamHeader from "./sub-exam-component/ExamHeader";
 
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import {

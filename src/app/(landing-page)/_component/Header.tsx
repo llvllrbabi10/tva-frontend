@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Logo } from "@images/assets";
 import Link from "next/link";
-import { HeaderMenuPC } from "./HeaderMenuPC";
-import headerStyles from "./header.module.css";
-import HeaderMenuMobile from "./HeaderMenuMobile";
+import { HeaderMenuPC } from "./sub-header/HeaderMenuPC";
+import headerStyles from "./sub-header/header.module.css";
+import HeaderMenuMobile from "./sub-header/HeaderMenuMobile";
 
 function Header() {
     return (
