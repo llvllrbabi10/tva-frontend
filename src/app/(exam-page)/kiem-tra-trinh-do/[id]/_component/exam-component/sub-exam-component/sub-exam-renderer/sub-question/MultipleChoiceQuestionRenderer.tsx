@@ -158,6 +158,7 @@ function MultipleChoiceQuestionRenderer({ data, userAnswer }: Props) {
                     py-[10px] 
                     rounded-[10px] 
                     shadow-sm
+                    overflow-hidden
                     ${getBgQuestion()}`}
             >
                 <div className="flex">

@@ -183,23 +183,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: A. does"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Chủ ngữ \"My brother\" là ngôi thứ 3 số ít, thì hiện tại đơn nên động từ phải thêm -es → does."
                             }
                         ]
@@ -340,23 +323,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: B. are playing"
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -523,23 +489,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: B. went"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "\"Last Sunday\" là dấu hiệu của thì quá khứ đơn. Động từ \"go\" có dạng quá khứ là \"went\"."
                             }
                         ]
@@ -680,23 +629,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: C. will go"
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -863,23 +795,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: A. has/ is having"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "\"Usually\" là dấu hiệu thì hiện tại đơn → Linda (ngôi 3 số ít) → has."
                             }
                         ]
@@ -980,23 +895,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: is reading"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Dấu hiệu \"At the moment\" cho biết hành động đang diễn ra ngay bây giờ, dùng thì hiện tại tiếp diễn."
                             }
                         ]
@@ -1052,23 +950,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: don't like"
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -1150,23 +1031,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: will visit"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Dấu hiệu \"next Saturday\" là tương lai, dùng thì tương lai đơn với will + động từ nguyên thể → will visit"
                             }
                         ]
@@ -1205,23 +1069,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: didn't drive"
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -1290,23 +1137,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: are skipping"
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -1437,23 +1267,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: She goes to school every morning."
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Chủ ngữ \"She\" là ngôi thứ 3 số ít, thì hiện tại đơn, động từ phải thêm -es → goes"
                             }
                         ]
@@ -1526,23 +1339,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: They are playing football now."
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -1641,23 +1437,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: He can sing very well."
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Sau động từ khuyết thiếu \"can\", động từ chính phải là nguyên thể không to → can sing"
                             }
                         ]
@@ -1743,23 +1522,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: He can sing very well."
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Thiếu động từ to be trong thì hiện tại tiếp diễn. Chủ ngữ \"My mother\" là số ít → thêm is → is cooking"
                             }
                         ]
@@ -1832,23 +1594,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: I will visit my aunt next week."
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -2137,23 +1882,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: C. goat"
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -2479,23 +2207,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: B. zoo"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "A. book /bʊk/"
                             }
                         ]
@@ -2719,23 +2430,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: B. balloon"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "A. kitchen /ˈkɪtʃɪn/"
                             }
                         ]
@@ -2897,23 +2591,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: B. banana"
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -3095,23 +2772,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: I have breakfast at 7 a.m. every day."
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Câu này sử dụng trật tự đúng của câu trong thì hiện tại đơn: Chủ ngữ + động từ + tân ngữ + thời gian."
                             }
                         ]
@@ -3184,23 +2844,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: Where is her sister now?"
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -3299,23 +2942,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: The boys are playing football now."
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Đây là câu ở thì hiện tại tiếp diễn, cấu trúc là Chủ ngữ + to be (are) + động từ-ing + tân ngữ."
                             }
                         ]
@@ -3401,23 +3027,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: They will have a party next week."
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Câu này là câu ở thì tương lai đơn, cấu trúc Chủ ngữ + will + động từ nguyên thể + tân ngữ."
                             }
                         ]
@@ -3490,23 +3099,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: What do you often do at weekends?"
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -3671,7 +3263,7 @@
                     }
                 ]
             },
-            "correctAnswer": "Her name is Lisa.",
+            "correctAnswer": "Her name is Lisa. / Her name's Lisa",
             "explain": {
                 "type": "doc",
                 "content": [
@@ -3689,23 +3281,6 @@
                                     }
                                 ],
                                 "text": "Thông tin trong bài: \"Hello! I’m Lisa.\""
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: Her name is Lisa."
                             }
                         ]
                     },
@@ -3807,23 +3382,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: She lives in Da Nang."
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Dịch: Cô ấy sống ở đâu? Cô ấy sống ở Đà Nẵng."
                             }
                         ]
@@ -3893,23 +3451,6 @@
                                     }
                                 ],
                                 "text": "Thông tin trong bài: \"I often get up at 6:00 and go to school at 6:30.\""
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: She goes to school at 6:30."
                             }
                         ]
                     },
@@ -4011,23 +3552,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: She went to the park yesterday."
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Dịch: Cô ấy đã đi đâu hôm qua? Cô ấy đã đến công viên hôm qua."
                             }
                         ]
@@ -4097,23 +3621,6 @@
                                     }
                                 ],
                                 "text": "Thông tin trong bài: \"Next weekend, we will go to the beach. I will swim and build sandcastles.\""
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: She will go to the beach and swim and build sandcastles."
                             }
                         ]
                     },
@@ -5057,23 +4564,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án A. Yes, I can."
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Câu hỏi \"Can you swim?\" yêu cầu trả lời về khả năng bơi lội, vì vậy đáp án chính xác là \"Yes, I can.\""
                             }
                         ]
@@ -5206,23 +4696,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: A. It’s sunny."
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -5439,23 +4912,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: B. False"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Tom nói \"I often go to the park in the afternoon\" (Tôi thường đi công viên vào buổi chiều), không phải buổi sáng."
                             }
                         ]
@@ -5563,23 +5019,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: B. False"
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [
@@ -5713,23 +5152,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: A. True"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Tom nói \"I liked the lions best because they were big and strong\" (Tôi thích những con sư tử nhất vì chúng lớn và mạnh mẽ)."
                             }
                         ]
@@ -5850,23 +5272,6 @@
                                         }
                                     }
                                 ],
-                                "text": "Đáp án: A. True"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
                                 "text": "Tom nói \"Next Sunday, we will have a picnic in the countryside\" (Chủ nhật tới, chúng tôi sẽ có một chuyến dã ngoại ở nông thôn)."
                             }
                         ]
@@ -5974,23 +5379,6 @@
             "explain": {
                 "type": "doc",
                 "content": [
-                    {
-                        "type": "paragraph",
-                        "content": [
-                            {
-                                "type": "text",
-                                "marks": [
-                                    {
-                                        "type": "textStyle",
-                                        "attrs": {
-                                            "color": "rgb(0, 0, 0)"
-                                        }
-                                    }
-                                ],
-                                "text": "Đáp án: B. False"
-                            }
-                        ]
-                    },
                     {
                         "type": "paragraph",
                         "content": [

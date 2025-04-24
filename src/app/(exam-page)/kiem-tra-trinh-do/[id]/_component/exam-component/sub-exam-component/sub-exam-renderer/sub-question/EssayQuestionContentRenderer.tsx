@@ -8,6 +8,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Question } from "@/app/(exam-page)/kiem-tra-trinh-do/[id]/_model/model";
 import { RootState } from "@/redux/store";
+import { getStyleFromMarks } from "@/redux/services/services-common";
 
 function EssayQuestionContentRenderer({
     data,
@@ -109,10 +110,6 @@ const CustomInput = ({
         shallowEqual
     );
 
-    const handleAnswerChange = (answer: string) => {
-        dispatch(setUserAnswers({ questionId, answer }));
-    };
-
     const [value, setValue] = useState(userAnswer || "");
     const spanRef = useRef<HTMLSpanElement>(null);
     const inputRef = useRef<HTMLInputElement>(null);
@@ -139,15 +136,27 @@ const CustomInput = ({
         }
     }, [value]);
 
+    const handleAnswerChange = (answer: string) => {
+        dispatch(setUserAnswers({ questionId, answer }));
+    };
+
+    const handleSetValue = (newValue: string) => {
+        // Không cho nhập 2 space liên tiếp
+        const sanitized = newValue.replace(/ {2,}/g, " ");
+        setValue(sanitized);
+    };
+
     return (
         <div className="relative inline-block">
             <input
                 ref={inputRef}
                 type="text"
                 value={value}
-                onChange={(e) => setValue(e.target.value)}
+                onChange={(e) => {
+                    handleSetValue(e.target.value);
+                }}
                 onBlur={() => {
-                    handleAnswerChange(value);
+                    handleAnswerChange(value.trim());
                 }}
                 disabled={submitted}
                 className="inline-block border-b border-black w-[80px] mx-1 focus:outline-none"
@@ -164,45 +173,4 @@ const CustomInput = ({
             </span>
         </div>
     );
-};
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const getStyleFromMarks = (marks: any[] = []) => {
-    const style: React.CSSProperties = {};
-    let fontWeight: string | undefined;
-    let fontStyle: string | undefined;
-    const textDecoration: string[] = [];
-
-    for (const mark of marks) {
-        switch (mark.type) {
-            case "bold":
-                fontWeight = "bold";
-                break;
-            case "italic":
-                fontStyle = "italic";
-                break;
-            case "underline":
-                textDecoration.push("underline");
-                break;
-            case "strike":
-                textDecoration.push("line-through");
-                break;
-            case "textStyle":
-                if (mark.attrs?.color) {
-                    style.color = mark.attrs.color;
-                }
-                if (mark.attrs?.backgroundColor) {
-                    style.backgroundColor = mark.attrs.backgroundColor;
-                }
-                break;
-        }
-    }
-
-    return {
-        ...style,
-        fontWeight,
-        fontStyle,
-        textDecoration:
-            textDecoration.length > 0 ? textDecoration.join(" ") : undefined,
-    };
 };

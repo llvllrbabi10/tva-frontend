@@ -6,6 +6,7 @@ import { RootState } from "@/redux/store";
 import { shallowEqual, useSelector } from "react-redux";
 import EssayQuestionContentRenderer from "./EssayQuestionContentRenderer";
 import EditorRender from "@/app/(exam-page)/kiem-tra-trinh-do/[id]/_component/common-component/EditorRender";
+import { normalizeText } from "@/redux/services/services-common";
 
 type Props = {
     data: Question;
@@ -23,16 +24,34 @@ function EssayQuestionRenderer({ data, userAnswer }: Props) {
     );
 
     const getBgQuestion = () => {
+        const isCorrect = isEssayAnswerCorrect(
+            userAnswer || "",
+            q.correctAnswer || ""
+        );
         if (!submitted) {
             return "bg-white";
         }
-        if (q.correctAnswer === userAnswer) {
+        if (isCorrect) {
             return "bg-[#d3f2cc]";
         }
-        if (q.correctAnswer !== userAnswer) {
+        if (!isCorrect) {
             return "bg-[#f5dfdf]";
         }
         return "bg-white";
+    };
+
+    // Check if the user's answer is correct
+    const isEssayAnswerCorrect = (
+        userAnswer: string,
+        correctAnswer: string
+    ): boolean => {
+        const normalizedUserAnswer = normalizeText(userAnswer);
+
+        const correctAnswers = correctAnswer
+            .split("/")
+            .map((ans) => normalizeText(ans));
+
+        return correctAnswers.some((ans) => ans === normalizedUserAnswer);
     };
 
     return (
@@ -45,6 +64,7 @@ function EssayQuestionRenderer({ data, userAnswer }: Props) {
                     py-[10px] 
                     rounded-[10px] 
                     shadow-sm
+                    overflow-hidden
                     ${getBgQuestion()}`}
                 >
                     <div className="md:font-[700] font-[600] mr-[10px]">
