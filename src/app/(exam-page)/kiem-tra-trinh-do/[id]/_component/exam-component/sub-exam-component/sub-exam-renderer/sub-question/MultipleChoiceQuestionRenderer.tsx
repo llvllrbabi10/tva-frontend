@@ -8,9 +8,8 @@ import {
     MultipleChoiceQuestion,
     Question,
     Option,
-    RichTextBlock,
 } from "@/app/(exam-page)/kiem-tra-trinh-do/[id]/_model/model";
-import RichText from "../RichText";
+import EditorRender from "@/app/(exam-page)/kiem-tra-trinh-do/[id]/_component/common-component/EditorRender";
 
 type Props = {
     data: Question;
@@ -35,6 +34,21 @@ function MultipleChoiceQuestionRenderer({ data, userAnswer }: Props) {
     useEffect(() => {
         if (!optionRefs.current.length) return;
 
+        const timeout = setTimeout(() => {
+            const { maxWidth, maxAreaWidth } = getWidthInfos();
+
+            if (maxWidth > maxAreaWidth / 2.5) {
+                setColClass("grid-cols-1");
+            } else if (maxWidth > maxAreaWidth / 5) {
+                setColClass("grid-cols-2");
+            } else {
+                setColClass("grid-cols-4");
+            }
+        }, 0);
+        return () => clearTimeout(timeout);
+    }, [q]);
+
+    const getWidthInfos = () => {
         const maxWidth = optionRefs.current.reduce((max, el) => {
             if (el) {
                 let width = 0;
@@ -63,14 +77,8 @@ function MultipleChoiceQuestionRenderer({ data, userAnswer }: Props) {
             );
         }
 
-        if (maxWidth > maxAreaWidth / 2.5) {
-            setColClass("grid-cols-1");
-        } else if (maxWidth > maxAreaWidth / 5) {
-            setColClass("grid-cols-2");
-        } else {
-            setColClass("grid-cols-4");
-        }
-    }, [q]);
+        return { maxWidth, maxAreaWidth };
+    };
 
     const handleAnswerChange = (questionId: string, answer: string) => {
         dispatch(setUserAnswers({ questionId, answer }));
@@ -120,7 +128,7 @@ function MultipleChoiceQuestionRenderer({ data, userAnswer }: Props) {
                         }}
                         className="flex gap-[5px] rounded-full cursor-pointer"
                         onClick={() =>
-                            !submitted && handleAnswerChange(q.label, opt.label)
+                            !submitted && handleAnswerChange(q.id, opt.label)
                         }
                     >
                         <span
@@ -132,7 +140,7 @@ function MultipleChoiceQuestionRenderer({ data, userAnswer }: Props) {
                             {opt.label}
                         </span>
 
-                        <RichText content={opt.content} />
+                        <EditorRender jsonContent={opt.content} />
                     </div>
                 ))}
             </div>
@@ -144,11 +152,7 @@ function MultipleChoiceQuestionRenderer({ data, userAnswer }: Props) {
             <div
                 className={`
                     flex
-                    ${
-                        q.questionContent?.length
-                            ? "flex-col gap-[10px]"
-                            : "flex-row"
-                    }
+                    ${q.questionContent ? "flex-col gap-[10px]" : "flex-row"}
                     mt-[10px] 
                     px-[16px] 
                     py-[10px] 
@@ -160,14 +164,16 @@ function MultipleChoiceQuestionRenderer({ data, userAnswer }: Props) {
                     <div className="md:font-[700] font-[600] mr-[10px]">
                         {q.label}.
                     </div>
-                    {q.questionContent && renderContent(q.questionContent)}
+                    {q.questionContent && (
+                        <EditorRender jsonContent={q.questionContent} />
+                    )}
                 </div>
                 {renderOptionGrid()}
             </div>
             {submitted && q.explain && (
-                <div className="mt-[5px] px-[16px] py-[10px] text-sm  bg-[#f7ffbe] rounded-[10px]">
+                <div className="mt-[5px] px-[16px] py-[10px] text-sm bg-[#f7ffbe] rounded-[10px]">
                     <strong>Giải thích:</strong>
-                    {renderContent(q.explain.content)}
+                    <EditorRender jsonContent={q.explain} />
                 </div>
             )}
         </>
@@ -175,11 +181,3 @@ function MultipleChoiceQuestionRenderer({ data, userAnswer }: Props) {
 }
 
 export default MultipleChoiceQuestionRenderer;
-
-const renderContent = (blocks: RichTextBlock[][]) => {
-    return blocks.map((line, index) => (
-        <div key={index}>
-            <RichText content={line} />
-        </div>
-    ));
-};

@@ -1,21 +1,55 @@
-import { Paragraph } from "../../../../_model/model";
-import RichText from "./RichText";
+import { Paragraph } from "@/app/(exam-page)/kiem-tra-trinh-do/[id]/_model/model";
+import EditorRender from "@/app/(exam-page)/kiem-tra-trinh-do/[id]/_component/common-component/EditorRender";
+
+import { shallowEqual, useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
 export default function ParagraphRenderer({ data }: { data: Paragraph }) {
+    const { color, backgroundColor, textAlign } = data.contentStyle;
+
+    const isTitle = data.translate ? false : true; // Kiểm tra xem đây có phải là tiêu đề không
+
+    const { submitted } = useSelector(
+        (state: RootState) => ({
+            submitted: state.exam.submitted,
+        }),
+        shallowEqual
+    );
+
     return (
-        <div
-            className="md:text-[18px] text-[16px] rounded-[10px] px-[16px] py-[10px] mt-[20px]"
-            style={{
-                backgroundColor: data.backgroundColor
-                    ? data.backgroundColor
-                    : undefined,
-                color: data.color ? data.color : undefined,
-                textAlign: data.align
-                    ? (data.align as React.CSSProperties["textAlign"])
-                    : undefined,
-            }}
-        >
-            <RichText content={data.content} />
-        </div>
+        <>
+            <div
+                className={`
+                md:text-[18px] 
+                text-[16px] 
+                rounded-[10px] 
+                px-[16px] 
+                py-[10px] 
+                ${isTitle ? "mt-[20px]" : "mt-[10px]"}`}
+                style={{
+                    color: color ? color : "black",
+                    backgroundColor: backgroundColor
+                        ? backgroundColor
+                        : "white",
+                    textAlign: textAlign ? textAlign : "left",
+                }}
+            >
+                <EditorRender jsonContent={data.content} />
+            </div>
+            {submitted && data.translate && (
+                <div
+                    className="
+                        text-sm
+                        bg-[#f7ffbe]
+                        rounded-[10px] 
+                        px-[16px] 
+                        py-[10px] 
+                        mt-[10px]"
+                >
+                    <p className="font-bold">Đoạn dịch:</p>
+                    <EditorRender jsonContent={data.translate} />
+                </div>
+            )}
+        </>
     );
 }

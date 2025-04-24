@@ -52,7 +52,7 @@ function ExamHeader() {
     return (
         <>
             {/* Header for desktop */}
-            <div className="fixed top-0 md:flex hidden w-full items-center justify-between p-4 gap-2 bg-white shadow-md">
+            <div className="fixed top-0 md:flex hidden w-full items-center justify-between p-4 gap-2 bg-white shadow-md z-10">
                 <Link href="/home" className="header-logo">
                     <Image
                         src={Logo}
@@ -88,7 +88,7 @@ function ExamHeader() {
             </div>
 
             {/* Header for mobile */}
-            <div className="fixed top-0 flex md:hidden flex-col w-full items-center justify-center px-[16px] py-[10px] gap-2 bg-white shadow-md">
+            <div className="fixed top-0 flex md:hidden flex-col w-full items-center justify-center px-[16px] py-[10px] gap-2 bg-white shadow-md z-10">
                 <div className="flex items-center justify-between w-full">
                     <Link href="/home" className="header-logo">
                         <Image

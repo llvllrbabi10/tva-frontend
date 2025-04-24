@@ -18,7 +18,7 @@ export default function ExamRenderer() {
 
     return (
         <div className="flex flex-col items-center justify-center">
-            <div className="flex flex-col md:w-[750px] md:px-[0px] px-[16px] py-[16px]">
+            <div className="flex flex-col md:max-w-[750px] max-w-[500px] md:px-[0px] px-[16px] py-[16px]">
                 {examInfo.examContent?.map((el) =>
                     el.type === "Paragraph" ? (
                         <ParagraphRenderer key={el.id} data={el} />
