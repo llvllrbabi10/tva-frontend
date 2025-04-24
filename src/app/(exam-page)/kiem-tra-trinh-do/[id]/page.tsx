@@ -7,7 +7,7 @@ type PageProps = {
 };
 
 // const IDS = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
-const IDS = ["1", "4"];
+const IDS = ["4"];
 
 async function page({ params }: PageProps) {
     const _params = await params;

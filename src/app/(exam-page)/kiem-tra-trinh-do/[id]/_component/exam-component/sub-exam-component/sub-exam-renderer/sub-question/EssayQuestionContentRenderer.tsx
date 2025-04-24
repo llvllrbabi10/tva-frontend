@@ -166,6 +166,7 @@ const CustomInput = ({
     );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getStyleFromMarks = (marks: any[] = []) => {
     const style: React.CSSProperties = {};
     let fontWeight: string | undefined;
