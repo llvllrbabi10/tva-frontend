@@ -20,7 +20,6 @@ export default function ParagraphRenderer({ data }: { data: Paragraph }) {
         <>
             <div
                 className={`
-                md:text-[18px] 
                 text-[16px] 
                 rounded-[10px] 
                 px-[16px] 

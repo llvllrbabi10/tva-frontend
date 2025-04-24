@@ -7,11 +7,10 @@ import ParagraphRenderer from "./sub-exam-renderer/Paragraph";
 import QuestionRenderer from "./sub-exam-renderer/Question";
 
 export default function ExamRenderer() {
-    const { examInfo, userAnswers, submitted } = useSelector(
+    const { examInfo, userAnswers } = useSelector(
         (state: RootState) => ({
             examInfo: state.exam.examInfo,
             userAnswers: state.exam.userAnswers,
-            submitted: state.exam.submitted,
         }),
         shallowEqual
     );
@@ -27,7 +26,6 @@ export default function ExamRenderer() {
                             key={el.id}
                             data={el}
                             userAnswer={userAnswers[el.id]}
-                            submitted={submitted}
                         />
                     )
                 )}

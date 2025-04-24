@@ -27,6 +27,7 @@ export const examSlice = createSlice({
             state.examInfo = action.payload;
         },
         setUserAnswers: (state, action) => {
+            console.log("action", action.payload);
             const { questionId, answer } = action.payload;
             state.userAnswers[questionId] = answer;
         },
