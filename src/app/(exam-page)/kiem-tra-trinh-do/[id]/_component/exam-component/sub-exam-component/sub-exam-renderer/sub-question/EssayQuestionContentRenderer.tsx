@@ -5,7 +5,7 @@ import { setUserAnswers } from "@/redux/slices/examSlice";
 
 import { JSONContent } from "@tiptap/react";
 import Image from "next/image";
-import { use, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Question } from "@/app/(exam-page)/kiem-tra-trinh-do/[id]/_model/model";
 import { RootState } from "@/redux/store";
 import { getStyleFromMarks } from "@/redux/services/services-common";

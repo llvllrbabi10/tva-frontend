@@ -13,6 +13,8 @@ import {
     Question,
 } from "@/app/(exam-page)/kiem-tra-trinh-do/[id]/_model/model";
 import { normalizeText } from "@/redux/services/services-common";
+import { useState } from "react";
+import BottomPopup from "../../common-component/BottomPopup";
 
 function ExamFooter({
     questionRefs,
@@ -31,6 +33,8 @@ function ExamFooter({
         }),
         shallowEqual
     );
+
+    const [showBottomPopup, setShowBottomPopup] = useState(false);
 
     const handleSubmit = () => {
         dispatch(setSubmitted(true));
@@ -121,53 +125,136 @@ function ExamFooter({
     };
 
     return (
-        <div className="relative w-full flex justify-center items-center bg-[#ffffff] border-t-[5px] border-t-[#f2f4f7] py-[10px]">
-            <div className="flex flex-wrap md:max-w-[750px] max-w-[500px] gap-[7.89px]">
-                {examInfo.examContent.map((item) => {
-                    if (item.type === "Question") {
-                        return (
-                            <div
-                                key={item.id}
-                                onClick={() => handleScrollToQuestion(item.id)}
-                                className={`
-                                    flex 
-                                    min-w-[30px] 
-                                    min-h-[30px] 
-                                    px-[5px]
-                                    items-center 
-                                    justify-center 
-                                    ${getStyleLabelOption(
-                                        item,
-                                        userAnswers[item.id]
-                                    )}
-                                    font-semibold
-                                    
-                                    rounded-md 
-                                    cursor-pointer`}
-                            >
-                                {item.label}
-                            </div>
-                        );
-                    }
-                    return null;
-                })}
+        <div className="flex w-full justify-center items-center bg-[#ffffff] border-t-[5px] border-t-[#f2f4f7] py-[10px]">
+            {/* Desktop */}
+            <div className="xl:flex hidden relative w-full justify-center items-center">
+                <div className="flex flex-wrap md:max-w-[750px] max-w-[500px] gap-[7.89px]">
+                    {examInfo.examContent.map((item) => {
+                        if (item.type === "Question") {
+                            return (
+                                <div
+                                    key={item.id}
+                                    onClick={() =>
+                                        handleScrollToQuestion(item.id)
+                                    }
+                                    className={`
+                                        flex 
+                                        min-w-[30px] 
+                                        min-h-[30px] 
+                                        px-[5px]
+                                        items-center 
+                                        justify-center 
+                                        ${getStyleLabelOption(
+                                            item,
+                                            userAnswers[item.id]
+                                        )}
+                                        font-semibold
+                                        
+                                        rounded-md 
+                                        cursor-pointer`}
+                                >
+                                    {item.label}
+                                </div>
+                            );
+                        }
+                        return null;
+                    })}
+                </div>
+                <div className="absolute right-[25px]">
+                    {!submitted && (
+                        <button
+                            onClick={handleSubmit}
+                            className="px-6 py-2 bg-[#d42424] text-white rounded-md hover:bg-[#ec1616] cursor-pointer"
+                        >
+                            Hoàn thành
+                        </button>
+                    )}
+                    {submitted && (
+                        <button
+                            onClick={startOver}
+                            className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 cursor-pointer"
+                        >
+                            Làm lại
+                        </button>
+                    )}
+                </div>
             </div>
-            <div className="absolute right-[25px]">
-                {!submitted && (
-                    <button
-                        onClick={handleSubmit}
-                        className="px-6 py-2 bg-[#d42424] text-white rounded-md hover:bg-[#ec1616] cursor-pointer"
+
+            {/* mobile */}
+            <div className="flex md:hidden flex-wrap justify-center md:max-w-[750px] max-w-[500px]">
+                <div
+                    className="text-[16px] font-semibold text-center md:w-[500px] w-screen"
+                    onClick={() => setShowBottomPopup(true)}
+                >
+                    Review & Submit
+                </div>
+                {showBottomPopup && (
+                    <BottomPopup
+                        onClose={() => {
+                            setShowBottomPopup(false);
+                        }}
                     >
-                        Hoàn thành
-                    </button>
-                )}
-                {submitted && (
-                    <button
-                        onClick={startOver}
-                        className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 cursor-pointer"
-                    >
-                        Làm lại
-                    </button>
+                        <div className="flex flex-col gap-[10px]">
+                            <div className="flex flex-wrap justify-between md:max-w-[750px] max-w-[500px] gap-[5px]">
+                                {examInfo.examContent.map((item) => {
+                                    if (item.type === "Question") {
+                                        return (
+                                            <div
+                                                key={item.id}
+                                                onClick={() => {
+                                                    setShowBottomPopup(false);
+                                                    handleScrollToQuestion(
+                                                        item.id
+                                                    );
+                                                }}
+                                                className={`
+                                        flex 
+                                        min-w-[30px] 
+                                        min-h-[30px] 
+                                        px-[5px]
+                                        items-center 
+                                        justify-center 
+                                        ${getStyleLabelOption(
+                                            item,
+                                            userAnswers[item.id]
+                                        )}
+                                        font-semibold
+                                        
+                                        rounded-md 
+                                        cursor-pointer`}
+                                            >
+                                                {item.label}
+                                            </div>
+                                        );
+                                    }
+                                    return null;
+                                })}
+                            </div>
+
+                            {!submitted && (
+                                <button
+                                    onClick={() => {
+                                        setShowBottomPopup(false);
+                                        handleSubmit();
+                                    }}
+                                    className="px-6 py-2 bg-[#d42424] text-white rounded-md hover:bg-[#ec1616] cursor-pointer"
+                                >
+                                    Hoàn thành
+                                </button>
+                            )}
+                            {submitted && (
+                                <button
+                                    onClick={() => {
+                                        setShowBottomPopup(false);
+                                        startOver();
+                                    }}
+                                    className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 cursor-pointer"
+                                >
+                                    Làm lại
+                                </button>
+                            )}
+                        </div>
+                    </BottomPopup>
                 )}
             </div>
         </div>
