@@ -17,11 +17,7 @@ async function page({ params }: PageProps) {
         notFound();
     }
 
-    return (
-        <div>
-            <ExamComponent id={id} />
-        </div>
-    );
+    return <ExamComponent id={id} />;
 }
 
 export default page;

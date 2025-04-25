@@ -3,9 +3,5 @@ export default function Layout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
-    return (
-        <div>
-            <div className="md:mt-[50px] mt-[70px]">{children}</div>
-        </div>
-    );
+    return <div>{children}</div>;
 }

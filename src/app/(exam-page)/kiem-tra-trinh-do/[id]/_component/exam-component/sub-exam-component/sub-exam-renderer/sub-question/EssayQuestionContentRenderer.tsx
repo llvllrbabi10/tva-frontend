@@ -5,7 +5,7 @@ import { setUserAnswers } from "@/redux/slices/examSlice";
 
 import { JSONContent } from "@tiptap/react";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { use, useEffect, useRef, useState } from "react";
 import { Question } from "@/app/(exam-page)/kiem-tra-trinh-do/[id]/_model/model";
 import { RootState } from "@/redux/store";
 import { getStyleFromMarks } from "@/redux/services/services-common";
@@ -136,6 +136,13 @@ const CustomInput = ({
         }
     }, [value]);
 
+    // Reset input value when start over
+    useEffect(() => {
+        if (!userAnswer) {
+            setValue("");
+        }
+    }, [userAnswer]);
+
     const handleAnswerChange = (answer: string) => {
         dispatch(setUserAnswers({ questionId, answer }));
     };
@@ -159,7 +166,7 @@ const CustomInput = ({
                     handleAnswerChange(value.trim());
                 }}
                 disabled={submitted}
-                className="inline-block border-b border-black w-[80px] mx-1 focus:outline-none"
+                className="inline-block border-b border-black md:w-[96px] w-[80px] mx-1 focus:outline-none"
             />
             <span
                 ref={spanRef}
