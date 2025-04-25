@@ -106,7 +106,11 @@ function ExamHeader() {
             {/* Header for mobile */}
             <div className="flex md:hidden flex-col w-full items-center justify-center px-[16px] py-[10px] gap-2 bg-white shadow-md">
                 <div className="flex items-center justify-between w-full">
-                    <Link href="/home" className="header-logo">
+                    <Link
+                        href="/home"
+                        onClick={resetLoading}
+                        className="header-logo"
+                    >
                         <Image
                             src={LogoShort}
                             alt="Logo"
@@ -130,7 +134,7 @@ function ExamHeader() {
                             {examTitle}
                         </div>
                     )}
-                    <Link href={"/kiem-tra-trinh-do"}>
+                    <Link href={"/kiem-tra-trinh-do"} onClick={resetLoading}>
                         <Image
                             src={XCircel}
                             alt="XCircel"

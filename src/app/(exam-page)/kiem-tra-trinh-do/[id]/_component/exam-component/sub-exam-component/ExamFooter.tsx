@@ -55,6 +55,9 @@ function ExamFooter({
     const startOver = () => {
         dispatch(setIsLoading(true));
 
+        // Cuộn lên đầu trang
+        window.scrollTo({ top: 0, behavior: "smooth" });
+
         dispatch(resetExam());
 
         setTimeout(() => {

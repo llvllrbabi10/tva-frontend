@@ -35,8 +35,15 @@ function ExamComponent({ id }: { id: string }) {
     useEffect(() => {
         if (examInfo.id == "0") {
             getExamData(id);
-        } else {
-            dispatch(setIsLoading(false));
+        }
+    }, []);
+
+    // fake loading screen
+    useEffect(() => {
+        if (isLoading) {
+            setTimeout(() => {
+                dispatch(setIsLoading(false));
+            }, 500);
         }
     }, []);
 
