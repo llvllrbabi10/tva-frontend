@@ -301,22 +301,22 @@ function ExamFooter({
                                 alt="AlertCircle"
                                 className="w-[30px] h-[30px]"
                             />
-                            <p className="text-[30px] font-semibold">
+                            <p className="md:text-[30px] text-[22px] font-semibold">
                                 Làm thiếu
                             </p>
                         </div>
-                        <p className="text-[20px] font-semibold">
+                        <p className="md:text-[20px] text-[18px] md:font-semibold">
                             Bạn còn {unanswered} câu chưa làm
                         </p>
                         <div className="flex self-end gap-[10px] mt-[20px]">
                             <p
-                                className="flex items-center h-[40px] font-semibold bg-[#e4e4e4] hover:bg-[#c9c9c9] px-[20px] rounded-md cursor-pointer"
+                                className="flex items-center h-[40px] md:font-semibold bg-[#e4e4e4] hover:bg-[#c9c9c9] px-[20px] rounded-md cursor-pointer"
                                 onClick={() => setShowSubmitPopup(false)}
                             >
                                 Làm tiếp
                             </p>
                             <p
-                                className="flex items-center h-[40px] text-white font-semibold bg-[#d42424] hover:bg-[#bd1212] px-[20px] rounded-md cursor-pointer"
+                                className="flex items-center h-[40px] text-white md:font-semibold bg-[#d42424] hover:bg-[#bd1212] px-[20px] rounded-md cursor-pointer"
                                 onClick={() => {
                                     setShowSubmitPopup(false);
                                     onSubmit();
