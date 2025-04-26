@@ -1,3 +1,8 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { useRouter, useParams } from "next/navigation";
+import Image from "next/image";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import {
     setSubmitted,
@@ -6,15 +11,19 @@ import {
     setIsLoading,
 } from "@/redux/slices/examSlice";
 import { RootState } from "@/redux/store";
+import { normalizeText } from "@/redux/services/services-common";
+
 import {
     EssayQuestion,
     ExamInfo,
     MultipleChoiceQuestion,
     Question,
 } from "@/app/(exam-page)/kiem-tra-trinh-do/[id]/_model/model";
-import { normalizeText } from "@/redux/services/services-common";
-import { useState } from "react";
+
+import { AlertCricle } from "@images/assets";
+
 import BottomPopup from "../../common-component/BottomPopup";
+import CenterPopup from "../../common-component/CenterPopup";
 
 function ExamFooter({
     questionRefs,
@@ -24,24 +33,45 @@ function ExamFooter({
     offset: { top: number; bottom: number };
 }) {
     const dispatch = useDispatch();
+    const router = useRouter();
+    const params = useParams();
 
-    const { examInfo, userAnswers, submitted } = useSelector(
+    const { examInfo, userAnswers, submitted, timeLeft } = useSelector(
         (state: RootState) => ({
             examInfo: state.exam.examInfo,
             userAnswers: state.exam.userAnswers,
             submitted: state.exam.submitted,
+            timeLeft: state.exam.timeLeft,
         }),
         shallowEqual
     );
 
     const [showBottomPopup, setShowBottomPopup] = useState(false);
+    const [showSubmitPopup, setShowSubmitPopup] = useState(false);
+
+    const { correct, incorrect, unanswered, score } = evaluateExamResult(
+        examInfo,
+        userAnswers
+    );
+
+    useEffect(() => {
+        if (timeLeft == 0 && !submitted) {
+            onSubmit();
+        }
+    }, [timeLeft, submitted]);
 
     const handleSubmit = () => {
-        dispatch(setSubmitted(true));
-        const { correct, incorrect, unanswered, score } = evaluateExamResult(
-            examInfo,
-            userAnswers
-        );
+        if (unanswered) {
+            setShowSubmitPopup(true);
+        } else {
+            onSubmit();
+        }
+    };
+
+    const onSubmit = () => {
+        dispatch(setIsLoading(true));
+
+        router.push(`/kiem-tra-trinh-do/${params.id}/ket-qua/`);
         dispatch(
             setExamResult({
                 score,
@@ -50,6 +80,7 @@ function ExamFooter({
                 unanswered,
             })
         );
+        dispatch(setSubmitted(true));
     };
 
     const startOver = () => {
@@ -184,9 +215,9 @@ function ExamFooter({
             </div>
 
             {/* mobile */}
-            <div className="flex md:hidden flex-wrap justify-center md:max-w-[750px] max-w-[500px]">
+            <div className="flex xl:hidden flex-wrap justify-center md:max-w-[750px] max-w-[500px]">
                 <div
-                    className="text-[16px] font-semibold text-center md:w-[500px] w-screen"
+                    className="text-[16px] hover:text-[#d42424] font-semibold text-center md:w-[500px] w-screen cursor-pointer"
                     onClick={() => setShowBottomPopup(true)}
                 >
                     Review & Submit
@@ -260,6 +291,43 @@ function ExamFooter({
                     </BottomPopup>
                 )}
             </div>
+
+            {showSubmitPopup && (
+                <CenterPopup onClose={() => setShowSubmitPopup(false)}>
+                    <div className="flex flex-col gap-[10px] items-start md:w-[350px] w-[min(calc(100vw-64px),500px)]">
+                        <div className="flex justify-center items-center gap-[20px]">
+                            <Image
+                                src={AlertCricle}
+                                alt="AlertCircle"
+                                className="w-[30px] h-[30px]"
+                            />
+                            <p className="text-[30px] font-semibold">
+                                Làm thiếu
+                            </p>
+                        </div>
+                        <p className="text-[20px] font-semibold">
+                            Bạn còn {unanswered} câu chưa làm
+                        </p>
+                        <div className="flex self-end gap-[10px] mt-[20px]">
+                            <p
+                                className="flex items-center h-[40px] font-semibold bg-[#e4e4e4] hover:bg-[#c9c9c9] px-[20px] rounded-md cursor-pointer"
+                                onClick={() => setShowSubmitPopup(false)}
+                            >
+                                Làm tiếp
+                            </p>
+                            <p
+                                className="flex items-center h-[40px] text-white font-semibold bg-[#d42424] hover:bg-[#bd1212] px-[20px] rounded-md cursor-pointer"
+                                onClick={() => {
+                                    setShowSubmitPopup(false);
+                                    onSubmit();
+                                }}
+                            >
+                                Vẫn nộp
+                            </p>
+                        </div>
+                    </div>
+                </CenterPopup>
+            )}
         </div>
     );
 }

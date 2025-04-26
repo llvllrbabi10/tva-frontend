@@ -5,14 +5,10 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
-import {
-    setIsLoading,
-    setTimeLeft,
-    setSubmitted,
-} from "@/redux/slices/examSlice";
+import { setIsLoading, setTimeLeft } from "@/redux/slices/examSlice";
 import { RootState } from "@/redux/store";
 
-import { Logo, LogoShort, Clock, XCircel } from "@images/assets";
+import { Logo, LogoShort, Clock, XCircle } from "@images/assets";
 
 function ExamHeader() {
     const dispatch = useDispatch();
@@ -36,9 +32,8 @@ function ExamHeader() {
                 const newTimeLeft = timeLeft - 1;
                 dispatch(setTimeLeft(newTimeLeft));
             }, 1000);
-        } else if (timeLeft === 0 && !submitted) {
-            dispatch(setSubmitted(true));
         }
+
         return () => {
             if (timerRef.current) clearTimeout(timerRef.current);
         };
@@ -95,8 +90,8 @@ function ExamHeader() {
 
                     <Link href={"/kiem-tra-trinh-do"} onClick={resetLoading}>
                         <Image
-                            src={XCircel}
-                            alt="XCircel"
+                            src={XCircle}
+                            alt="XCircle"
                             className="w-[30px] h-[30px] cursor-pointer"
                         />
                     </Link>
@@ -136,8 +131,8 @@ function ExamHeader() {
                     )}
                     <Link href={"/kiem-tra-trinh-do"} onClick={resetLoading}>
                         <Image
-                            src={XCircel}
-                            alt="XCircel"
+                            src={XCircle}
+                            alt="XCircle"
                             className="w-[25px] h-[25px] cursor-pointer"
                         />
                     </Link>

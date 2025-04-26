@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
-const BottomPopup = ({
+const CenterPopup = ({
     children,
     onClose,
 }: {
@@ -15,13 +15,6 @@ const BottomPopup = ({
     useEffect(() => {
         // Trigger animation in
         setVisible(true);
-
-        // ✳️ Ngăn scroll body khi popup mở
-        document.body.style.overflow = "hidden";
-
-        return () => {
-            document.body.style.overflow = "";
-        };
     }, []);
 
     const handleClose = () => {
@@ -31,22 +24,22 @@ const BottomPopup = ({
         // Wait for animation to finish (300ms), then close
         setTimeout(() => {
             onClose();
-        }, 300);
+        }, 200);
     };
 
     if (typeof window === "undefined") return null;
 
     return createPortal(
         <div
-            className="fixed inset-0 bg-black/50 z-50 flex items-end justify-center"
+            className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center"
             onClick={handleClose}
         >
             <div
                 onClick={(e) => e.stopPropagation()}
                 className={`
-                    bg-white overflow-auto relative pt-[30px] pb-[16px] px-[16px] rounded-t-[15px]
-                    transition-transform duration-300 ease-in-out
-                    ${visible ? "translate-y-0" : "translate-y-full"}
+                    bg-white overflow-auto relative pt-[30px] pb-[16px] px-[16px] rounded-[15px]
+                    transition-all duration-300 ease-in-out
+                    ${visible ? "opacity-100" : "opacity-0"}
                 `}
             >
                 <button
@@ -62,4 +55,4 @@ const BottomPopup = ({
     );
 };
 
-export default BottomPopup;
+export default CenterPopup;

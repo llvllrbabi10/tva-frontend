@@ -76,4 +76,6 @@ export { default as CloseIcon } from "./images/close-icon.png";
 export { default as NotFoundImg } from "./images/404-page.jpg";
 export { default as PlacementTestImg1 } from "./images/placement-test-img1.png";
 export { default as Clock } from "./images/clock.png";
-export { default as XCircel } from "./images/x-circle.png";
+export { default as XCircle } from "./images/x-circle.png";
+export { default as AlertCricle } from "./images/alert-circle.png";
+export { default as CuteChampion } from "./images/cute-champion.png";
