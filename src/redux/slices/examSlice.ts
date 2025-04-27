@@ -25,7 +25,7 @@ const initialState: ExamState = {
     },
     userAnswers: {},
     submitted: false,
-    totalTime: 0,
+    totalTime: -1,
     timeLeft: -1,
     examResult: {
         score: 0,

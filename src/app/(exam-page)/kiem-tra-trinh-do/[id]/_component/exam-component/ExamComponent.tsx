@@ -12,6 +12,7 @@ import {
     setExamInfo,
     setTotalTime,
     setTimeLeft,
+    resetExam,
 } from "@/redux/slices/examSlice";
 import { RootState } from "@/redux/store";
 import ExamFooter from "./sub-exam-component/ExamFooter";
@@ -33,8 +34,9 @@ function ExamComponent({ id }: { id: string }) {
     const [offset, setOffset] = useState({ top: 62, bottom: 50 });
 
     useEffect(() => {
-        if (examInfo.id == "0") {
+        if (examInfo.id != `entrance-test-${id}`) {
             getExamData(id);
+            dispatch(resetExam());
         }
     }, []);
 
