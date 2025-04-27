@@ -162,7 +162,7 @@ function ExamFooter({
         <div className="flex w-full justify-center items-center bg-[#ffffff] border-t-[5px] border-t-[#f2f4f7] py-[10px]">
             {/* Desktop */}
             <div className="xl:flex hidden relative w-full justify-center items-center">
-                <div className="flex flex-wrap md:max-w-[750px] max-w-[500px] gap-[7.89px]">
+                <div className="flex flex-wrap md:max-w-[750px] max-w-[500px] gap-[7.85px]">
                     {examInfo.examContent.map((item) => {
                         if (item.type === "Question") {
                             return (
