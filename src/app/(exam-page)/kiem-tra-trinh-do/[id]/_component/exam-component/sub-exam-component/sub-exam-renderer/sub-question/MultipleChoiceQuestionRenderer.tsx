@@ -140,7 +140,10 @@ function MultipleChoiceQuestionRenderer({ data, userAnswer }: Props) {
                             {opt.label}
                         </span>
 
-                        <EditorRender jsonContent={opt.content} />
+                        <EditorRender
+                            jsonContent={opt.content}
+                            isOptionQuestion={true}
+                        />
                     </div>
                 ))}
             </div>
@@ -165,9 +168,11 @@ function MultipleChoiceQuestionRenderer({ data, userAnswer }: Props) {
                     <div className="md:font-[700] font-[600] mr-[10px]">
                         {q.label}.
                     </div>
+                    {/* <div className="flex flex-1 bg-amber-800"> */}
                     {q.questionContent && (
                         <EditorRender jsonContent={q.questionContent} />
                     )}
+                    {/* </div> */}
                 </div>
                 {renderOptionGrid()}
             </div>

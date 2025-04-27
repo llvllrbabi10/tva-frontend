@@ -10,8 +10,10 @@ import Image from "@tiptap/extension-image";
 
 export default function EditorRender({
     jsonContent,
+    isOptionQuestion = false,
 }: {
     jsonContent: JSONContent;
+    isOptionQuestion?: boolean;
 }) {
     const editor = useEditor({
         extensions: [
@@ -30,5 +32,11 @@ export default function EditorRender({
         immediatelyRender: false, // 👇 Đây là cấu hình Tiptap cảnh báo thêm
     });
 
-    return <EditorContent editor={editor} />;
+    return isOptionQuestion ? (
+        <EditorContent editor={editor} />
+    ) : (
+        <div className="w-full">
+            <EditorContent editor={editor} />
+        </div>
+    );
 }
