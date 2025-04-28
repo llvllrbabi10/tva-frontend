@@ -6051,7 +6051,7 @@
                                         }
                                     }
                                 ],
-                                "text": "Due to the bad weather, the flight to Ha Noi was put off."
+                                "text": "Due / bad weather / flight / Ha Noi / off."
                             }
                         ]
                     }
@@ -9669,5 +9669,5 @@
         }
     ],
     "duration": 60,
-    "totalScore": 100
+    "totalScore": 10
 }

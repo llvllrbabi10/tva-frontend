@@ -375,7 +375,7 @@ const evaluateExamResult = (
 
     const totalQuestions = questions.length;
     const score = exam.totalScore
-        ? Math.round((correct / totalQuestions) * exam.totalScore)
+        ? Number(((correct / totalQuestions) * exam.totalScore).toFixed(1))
         : correct; // fallback nếu không có totalScore
 
     return {

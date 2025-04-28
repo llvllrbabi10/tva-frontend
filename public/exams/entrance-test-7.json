@@ -4783,6 +4783,706 @@
             }
         },
         {
+            "id": "880cb843-9c1c-49f8-b2cc-b12368b1d3d7",
+            "type": "Paragraph",
+            "content": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "attrs": {
+                            "textAlign": null
+                        },
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle"
+                                    },
+                                    {
+                                        "type": "bold"
+                                    }
+                                ],
+                                "text": "Circle the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s) in each of the following questions."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "contentStyle": {
+                "color": "#ffffff",
+                "fontSize": 18,
+                "backgroundColor": "#d42424",
+                "textAlign": "left"
+            }
+        },
+        {
+            "id": "0b9c970b-9c9d-4ce0-b5de-6f5d074a1733",
+            "type": "Question",
+            "questionType": 1,
+            "label": "26",
+            "options": [
+                {
+                    "label": "A",
+                    "content": {
+                        "type": "doc",
+                        "content": [
+                            {
+                                "type": "paragraph",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "marks": [
+                                            {
+                                                "type": "textStyle",
+                                                "attrs": {
+                                                    "color": "rgb(0, 0, 0)"
+                                                }
+                                            }
+                                        ],
+                                        "text": "fresh"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "label": "B",
+                    "content": {
+                        "type": "doc",
+                        "content": [
+                            {
+                                "type": "paragraph",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "marks": [
+                                            {
+                                                "type": "textStyle",
+                                                "attrs": {
+                                                    "color": "rgb(0, 0, 0)"
+                                                }
+                                            }
+                                        ],
+                                        "text": "tasty"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "label": "C",
+                    "content": {
+                        "type": "doc",
+                        "content": [
+                            {
+                                "type": "paragraph",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "marks": [
+                                            {
+                                                "type": "textStyle",
+                                                "attrs": {
+                                                    "color": "rgb(0, 0, 0)"
+                                                }
+                                            }
+                                        ],
+                                        "text": "bitter"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "label": "D",
+                    "content": {
+                        "type": "doc",
+                        "content": [
+                            {
+                                "type": "paragraph",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "marks": [
+                                            {
+                                                "type": "textStyle",
+                                                "attrs": {
+                                                    "color": "rgb(0, 0, 0)"
+                                                }
+                                            }
+                                        ],
+                                        "text": "sour"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ],
+            "questionContent": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": "The coffee isn’t very "
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    },
+                                    {
+                                        "type": "bold"
+                                    },
+                                    {
+                                        "type": "underline"
+                                    }
+                                ],
+                                "text": "sweet"
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": ". I’ll add some more sugar."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "correctAnswer": "C",
+            "explain": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": "Sweet nghĩa là \"ngọt\". Từ opposite (trái nghĩa) với sweet là bitter (đắng)."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": "Các từ còn lại:"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": "fresh: tươi"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": "tasty: ngon"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": "sour: chua"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": "Dịch: Cà phê này không ngọt lắm. Tôi sẽ thêm chút đường."
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "69b6776c-9267-415e-abb7-d59e3edb3f6c",
+            "type": "Question",
+            "questionType": 1,
+            "label": "27",
+            "options": [
+                {
+                    "label": "A",
+                    "content": {
+                        "type": "doc",
+                        "content": [
+                            {
+                                "type": "paragraph",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "marks": [
+                                            {
+                                                "type": "textStyle",
+                                                "attrs": {
+                                                    "color": "rgb(0, 0, 0)"
+                                                }
+                                            }
+                                        ],
+                                        "text": "modern"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "label": "B",
+                    "content": {
+                        "type": "doc",
+                        "content": [
+                            {
+                                "type": "paragraph",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "marks": [
+                                            {
+                                                "type": "textStyle",
+                                                "attrs": {
+                                                    "color": "rgb(0, 0, 0)"
+                                                }
+                                            }
+                                        ],
+                                        "text": "classical"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "label": "C",
+                    "content": {
+                        "type": "doc",
+                        "content": [
+                            {
+                                "type": "paragraph",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "marks": [
+                                            {
+                                                "type": "textStyle",
+                                                "attrs": {
+                                                    "color": "rgb(0, 0, 0)"
+                                                }
+                                            }
+                                        ],
+                                        "text": "country"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "label": "D",
+                    "content": {
+                        "type": "doc",
+                        "content": [
+                            {
+                                "type": "paragraph",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "marks": [
+                                            {
+                                                "type": "textStyle",
+                                                "attrs": {
+                                                    "color": "rgb(0, 0, 0)"
+                                                }
+                                            }
+                                        ],
+                                        "text": "pop"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ],
+            "questionContent": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": "Does your grandfather like listening to "
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    },
+                                    {
+                                        "type": "bold"
+                                    },
+                                    {
+                                        "type": "underline"
+                                    }
+                                ],
+                                "text": "folk"
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": " music?"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "correctAnswer": "A",
+            "explain": {
+                "type": "doc",
+                "content": [
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    },
+                                    {
+                                        "type": "italic"
+                                    }
+                                ],
+                                "text": "Folk music"
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": " là nhạc dân gian, truyền thống, mang tính cổ truyền. Từ trái nghĩa với "
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    },
+                                    {
+                                        "type": "italic"
+                                    }
+                                ],
+                                "text": "folk"
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": " là "
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    },
+                                    {
+                                        "type": "italic"
+                                    }
+                                ],
+                                "text": "modern"
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": " (hiện đại)."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": "Các từ còn lại:"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    },
+                                    {
+                                        "type": "italic"
+                                    }
+                                ],
+                                "text": "classical"
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": ": cổ điển"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    },
+                                    {
+                                        "type": "italic"
+                                    }
+                                ],
+                                "text": "country"
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": ": nhạc đồng quê (khá gần với folk)"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    },
+                                    {
+                                        "type": "italic"
+                                    }
+                                ],
+                                "text": "pop"
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": ": nhạc pop (hiện đại nhưng khác thể loại đặc trưng)"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "content": [
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    },
+                                    {
+                                        "type": "bold"
+                                    }
+                                ],
+                                "text": "Dịch:"
+                            },
+                            {
+                                "type": "text",
+                                "marks": [
+                                    {
+                                        "type": "textStyle",
+                                        "attrs": {
+                                            "color": "rgb(0, 0, 0)"
+                                        }
+                                    }
+                                ],
+                                "text": " Ông bạn có thích nghe nhạc dân gian không?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
             "id": "bebd41be-9666-447a-bc40-e33d9d8ff669",
             "type": "Paragraph",
             "content": {
@@ -8880,5 +9580,5 @@
         }
     ],
     "duration": 60,
-    "totalScore": 100
+    "totalScore": 10
 }
