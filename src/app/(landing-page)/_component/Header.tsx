@@ -27,12 +27,17 @@ function Header() {
                     <HeaderMenuPC />
                 </div>
 
-                <Link
+                <div
+                    className={`md:text-[18px] text-[16px] font-[600] text-white bg-[#aaa9a9] rounded-md px-4 py-2 cursor-not-allowed`}
+                >
+                    Đăng nhập
+                </div>
+                {/* <Link
                     href="/home"
                     className={`md:text-[18px] text-[16px] font-[600] text-white bg-[#d14242] hover:bg-[#c92929] rounded-md px-4 py-2 cursor-pointer`}
                 >
                     Đăng nhập
-                </Link>
+                </Link> */}
             </div>
         </div>
     );

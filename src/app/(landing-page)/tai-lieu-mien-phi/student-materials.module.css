@@ -1,0 +1,5 @@
+.materialBg {
+    background: url("/assets/svgs/materials-bg.svg") no-repeat center center
+        fixed;
+    background-size: cover;
+}

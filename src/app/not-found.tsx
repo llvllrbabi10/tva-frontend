@@ -10,7 +10,7 @@ function NotFound() {
         <div>
             <Header />
 
-            <div className="flex flex-col items-center justify-center min-h-[calc(100vh-433px)] gap-[30px] mx-[16px] mt-[65px]">
+            <div className="flex flex-col items-center justify-center min-h-[calc(100vh-433px)] gap-[30px] mx-[16px] mt-[65px] mb-[20px]">
                 <Image
                     src={NotFoundImg}
                     alt="NotFound"

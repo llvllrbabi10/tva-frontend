@@ -58,42 +58,42 @@ function Footer() {
 
                         <Link
                             className="text-white hover:text-[#FF5159]"
-                            href=""
+                            href="/offline-class/mam-non"
                         >
                             Tiếng Anh mầm non
                         </Link>
 
                         <Link
                             className="text-white hover:text-[#FF5159]"
-                            href=""
+                            href="/offline-class/tieu-hoc"
                         >
                             Tiếng Anh tiểu học
                         </Link>
 
                         <Link
                             className="text-white hover:text-[#FF5159]"
-                            href=""
+                            href="/offline-class/thcs"
                         >
                             Tiếng Anh trung học cơ sở
                         </Link>
 
                         <Link
                             className="text-white hover:text-[#FF5159]"
-                            href=""
+                            href="/offline-class/thpt"
                         >
                             Tiếng Anh trung học phổ thông
                         </Link>
 
                         <Link
                             className="text-white hover:text-[#FF5159]"
-                            href=""
+                            href="/offline-class/thpt"
                         >
                             Chứng chỉ IELTS
                         </Link>
 
                         <Link
                             className="text-white hover:text-[#FF5159]"
-                            href=""
+                            href="/khoa-hoc-online"
                         >
                             Các khóa học online
                         </Link>
@@ -114,17 +114,17 @@ function Footer() {
                         </div>
 
                         <div className="flex gap-[20px] items-center">
-                            <Link href="">
+                            <Link href="https://www.facebook.com/englishthaivananh">
                                 <Image
                                     src={FacebookIcon}
-                                    alt=""
+                                    alt="FacebookIcon"
                                     className="w-[40px]"
                                 />
                             </Link>
-                            <Link href="">
+                            <Link href="https://www.youtube.com/@tienganhcothaivananh3481">
                                 <Image
                                     src={YoutubeIcon}
-                                    alt=""
+                                    alt="YoutubeIcon"
                                     className="w-[40px]"
                                 />
                             </Link>
@@ -134,7 +134,7 @@ function Footer() {
                             >
                                 <Image
                                     src={TiktokIcon}
-                                    alt=""
+                                    alt="TiktokIcon"
                                     className="w-[30px] h-[30px]"
                                 />
                             </Link>
