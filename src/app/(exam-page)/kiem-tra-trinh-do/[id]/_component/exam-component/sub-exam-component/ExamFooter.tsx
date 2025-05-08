@@ -217,7 +217,7 @@ function ExamFooter({
             {/* mobile */}
             <div className="flex xl:hidden flex-wrap justify-center md:max-w-[750px] max-w-[500px]">
                 <div
-                    className="text-[16px] hover:text-[#d42424] font-semibold text-center md:w-[500px] w-screen cursor-pointer"
+                    className="text-[16px] text-[#d42424] font-semibold text-center md:w-[500px] w-screen cursor-pointer"
                     onClick={() => setShowBottomPopup(true)}
                 >
                     Review & Submit

@@ -79,3 +79,4 @@ export { default as Clock } from "./images/clock.png";
 export { default as XCircle } from "./images/x-circle.png";
 export { default as AlertCricle } from "./images/alert-circle.png";
 export { default as CuteChampion } from "./images/cute-champion.png";
+export { default as RegisterPopupImg } from "./images/register-popup.png";

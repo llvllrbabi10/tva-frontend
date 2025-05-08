@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "./_component/Header";
 import Footer from "./_component/Footer";
+import RegisterPopup from "./_component/RegisterPopup";
 
 export const metadata: Metadata = {
     title: "TVA Education",
@@ -17,6 +18,7 @@ export default function Layout({
             <Header />
             <div className="mt-[65px]">{children}</div>
             <Footer />
+            <RegisterPopup />
         </div>
     );
 }

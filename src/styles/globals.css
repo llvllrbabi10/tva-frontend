@@ -190,3 +190,18 @@ body {
     margin: 20px auto -10px;
     object-fit: cover;
 }
+
+/* lắc */
+@keyframes scaleAnimation {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.scale-animate {
+    animation: scaleAnimation 1s infinite;
+}
